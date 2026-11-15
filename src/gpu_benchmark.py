@@ -25,11 +25,16 @@ def score_gpu_records(records_dir: Path, cases_dir: Path) -> list[dict]:
     expected = {item['case_id']: item for item in build_gpu_inputs(cases_dir)}
     manifest = {item['case_id']: item for item in json.loads((cases_dir / 'manifest.json').read_text(encoding='utf-8'))}
     results = []
+    seen = set()
     for file in sorted(records_dir.rglob('*.json')):
         record = json.loads(file.read_text(encoding='utf-8'))
         if not isinstance(record, dict) or 'case_id' not in record:
             continue
         case_id = record['case_id']
+        pair = (record.get('model'), case_id)
+        if pair in seen:
+            raise ValueError('Duplicate model/case response: ' + str(pair))
+        seen.add(pair)
         if case_id not in expected or record.get('input_sha256') != expected[case_id]['input_sha256']:
             raise ValueError('GPU response belongs to a different source/prompt version: ' + str(case_id))
         root = cases_dir / manifest[case_id]['path']

@@ -1,0 +1,114 @@
+{
+  "case_id": "medium-complete",
+  "input_sha256": "1123363d7e7391e50bfe63bbcb84795bdcb0febc4ac4880d477a8799f6531f31",
+  "unit": "million_rub",
+  "need": 75,
+  "capacity_base": 74.07407407407408,
+  "capacity_stress": 59.25925925925927,
+  "proposed_amount": 59.25925925925927,
+  "funding_gap": 15.740740740740733,
+  "base_schedule": [
+    {
+      "year": 1,
+      "opening_debt": 59.25925925925927,
+      "principal": 11.851851851851853,
+      "interest": 9.481481481481483,
+      "debt_service": 21.333333333333336,
+      "cfads": 32,
+      "dscr": 1.4999999999999998,
+      "closing_debt": 47.40740740740741
+    },
+    {
+      "year": 2,
+      "opening_debt": 47.40740740740741,
+      "principal": 11.851851851851853,
+      "interest": 7.585185185185186,
+      "debt_service": 19.43703703703704,
+      "cfads": 36,
+      "dscr": 1.8521341463414631,
+      "closing_debt": 35.55555555555556
+    },
+    {
+      "year": 3,
+      "opening_debt": 35.55555555555556,
+      "principal": 11.851851851851853,
+      "interest": 5.688888888888889,
+      "debt_service": 17.54074074074074,
+      "cfads": 40,
+      "dscr": 2.2804054054054053,
+      "closing_debt": 23.70370370370371
+    },
+    {
+      "year": 4,
+      "opening_debt": 23.70370370370371,
+      "principal": 11.851851851851853,
+      "interest": 3.7925925925925936,
+      "debt_service": 15.644444444444446,
+      "cfads": 43,
+      "dscr": 2.7485795454545454,
+      "closing_debt": 11.851851851851855
+    },
+    {
+      "year": 5,
+      "opening_debt": 11.851851851851855,
+      "principal": 11.851851851851853,
+      "interest": 1.8962962962962968,
+      "debt_service": 13.74814814814815,
+      "cfads": 46,
+      "dscr": 3.3459051724137927,
+      "closing_debt": 0.0
+    }
+  ],
+  "stress_schedule": [
+    {
+      "year": 1,
+      "opening_debt": 59.25925925925927,
+      "principal": 11.851851851851853,
+      "interest": 9.481481481481483,
+      "debt_service": 21.333333333333336,
+      "cfads": 25.6,
+      "dscr": 1.2,
+      "closing_debt": 47.40740740740741
+    },
+    {
+      "year": 2,
+      "opening_debt": 47.40740740740741,
+      "principal": 11.851851851851853,
+      "interest": 7.585185185185186,
+      "debt_service": 19.43703703703704,
+      "cfads": 28.8,
+      "dscr": 1.4817073170731705,
+      "closing_debt": 35.55555555555556
+    },
+    {
+      "year": 3,
+      "opening_debt": 35.55555555555556,
+      "principal": 11.851851851851853,
+      "interest": 5.688888888888889,
+      "debt_service": 17.54074074074074,
+      "cfads": 32.0,
+      "dscr": 1.8243243243243243,
+      "closing_debt": 23.70370370370371
+    },
+    {
+      "year": 4,
+      "opening_debt": 23.70370370370371,
+      "principal": 11.851851851851853,
+      "interest": 3.7925925925925936,
+      "debt_service": 15.644444444444446,
+      "cfads": 34.4,
+      "dscr": 2.1988636363636362,
+      "closing_debt": 11.851851851851855
+    },
+    {
+      "year": 5,
+      "opening_debt": 11.851851851851855,
+      "principal": 11.851851851851853,
+      "interest": 1.8962962962962968,
+      "debt_service": 13.74814814814815,
+      "cfads": 36.800000000000004,
+      "dscr": 2.6767241379310343,
+      "closing_debt": 0.0
+    }
+  ]
+}

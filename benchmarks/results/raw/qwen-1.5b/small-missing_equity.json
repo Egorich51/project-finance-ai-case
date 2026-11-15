@@ -1,0 +1,16 @@
+{
+  "case_id": "small-missing_equity",
+  "business": "small",
+  "variant": "missing_equity",
+  "input_sha256": "0fc1ace2147e8f13da4fe99df0949bddab74f67815b6bc7bf0ba666efbf024f2",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "started_utc": "2026-11-15T21:04:14.983476+00:00",
+  "raw_text": "```json\n{\n  \"fields\": {\n    \"budget\": {\n      \"value\": 8000,\n      \"unit\": \"million_rub\",\n      \"period\": \"project\"\n    },\n    \"equity\": {\n      \"value\": null,\n      \"unit\": null,\n      \"period\": \"project\"\n    },\n    \"rate\": {\n      \"value\": 0.18,\n      \"unit\": \"%\",\n      \"period\": \"year\"\n    },\n    \"years\": {\n      \"value\": 5,\n      \"unit\": \"year\",\n      \"period\": \"project\"\n    },\n    \"stress_factor\": {\n      \"value\": 0.25,\n      \"unit\": \"\",\n      \"period\": \"year\"\n    },\n    \"dscr_floor\": {\n      \"value\": 1.2,\n      \"unit\": \"\",\n      \"period\": \"year\"\n    }\n  },\n  \"issues\": [\n    {\n      \"field\": \"cfads_1\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"financials.xlsx\",\n          \"locator\": \"Forecast!A12\"\n        },\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    },\n    {\n      \"field\": \"cfads_2\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"financials.xlsx\",\n          \"locator\": \"Forecast!B12\"\n        },\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    },\n    {\n      \"field\": \"cfads_3\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"financials.xlsx\",\n          \"locator\": \"Forecast!C12\"\n        },\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    },\n    {\n      \"field\": \"cfads_4\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"financials.xlsx\",\n          \"locator\": \"Forecast!D12\"\n        },\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    },\n    {\n      \"field\": \"cfads_5\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"financials.xlsx\",\n          \"locator\": \"Forecast!E12\"\n        },\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    }\n  ]\n}\n```",
+  "prompt_tokens": 1739,
+  "generated_tokens": 574,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 1621265408,
+  "elapsed_seconds": 28.864652407999984,
+  "finished_utc": "2026-11-15T21:04:43.853596+00:00"
+}

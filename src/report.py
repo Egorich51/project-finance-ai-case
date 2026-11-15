@@ -118,7 +118,7 @@ def _workbook(data, result, target):
         schedule.print_area = f'A1:K{data["years"]+6}'
 
     out = book['Output']
-    _header(out, 'Предварительный расчёт финансирования', 'Синтетический пример. Расчётный предел по условному DSCR — не одобрение кредита и не оценка кредитного риска.')
+    _header(out, data.get('project_title', 'Предварительный расчёт финансирования'), 'Синтетический пример. Расчётный предел по условному DSCR — не одобрение кредита и не оценка кредитного риска.')
     _band(out, 4, ['Показатель', 'Значение', 'Единица'])
     end = data['years'] + 5
     input_gate = f'AND(COUNT(Input!B4:B9,Input!B13:B{12+data["years"]})={6+data["years"]},Input!B4>=0,Input!B5>=0,Input!B6>=0,Input!B7={data["years"]},Input!B8>=0,Input!B8<=1,Input!B9>0)'

@@ -32,11 +32,13 @@ def _number(value):
 
 def _normalized(item):
     value, unit = item.get('value'), item.get('unit')
+    scale = {'million_rub': 1, 'thousand_rub': 0.001, 'rub': 0.000001}
     if value is None:
+        if isinstance(unit, str) and unit in scale:
+            return value, 'million_rub'
         return value, unit
     if not _number(value) or not isinstance(unit, str):
         return 'invalid', unit
-    scale = {'million_rub': 1, 'thousand_rub': 0.001, 'rub': 0.000001}
     if unit in scale:
         return value * scale[unit], 'million_rub'
     return value, unit

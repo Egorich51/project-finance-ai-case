@@ -1,0 +1,16 @@
+{
+  "case_id": "medium-budget_conflict",
+  "business": "medium",
+  "variant": "budget_conflict",
+  "input_sha256": "f6da255378b72a34d774291eb5f6af6608d3c35bc7f949a568f59841e99b2204",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "started_utc": "2026-11-15T21:08:36.960289+00:00",
+  "raw_text": "{\n    \"fields\": {\n        \"budget\": {\"value\": 125000, \"unit\": \"thousand_rub\", \"period\": \"project\", \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!B4]\"}]},\n        \"equity\": {\"value\": 45000, \"unit\": \"thousand_rub\", \"period\": \"project\", \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!B5]\"}]},\n        \"rate\": {\"value\": 0.16, \"unit\": \"fraction\", \"period\": \"project\", \"sources\": [{\"file\": \"project.docx\", \"locator\": \"[project.docx|paragraph:5]\"}]},\n        \"years\": {\"value\": 5, \"unit\": \"year\", \"period\": \"project\", \"sources\": [{\"file\": \"project.docx\", \"locator\": \"[project.docx|paragraph:6]\"}]},\n        \"stress_factor\": {\"value\": 0.8, \"unit\": \"fraction\", \"period\": \"project\", \"sources\": [{\"file\": \"project.docx\", \"locator\": \"[project.docx|paragraph:7]\"}]},\n        \"dscr_floor\": {\"value\": 1.2, \"unit\": \"ratio\", \"period\": \"project\", \"sources\": [{\"file\": \"project.docx\", \"locator\": \"[project.docx|paragraph:8]\"}]},\n        \"cfads_1\": {\"value\": 32, \"unit\": \"million_rub\", \"period\": 1, \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!B10]\"}]},\n        \"cfads_2\": {\"value\": 36, \"unit\": \"million_rub\", \"period\": 2, \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!C10]\"}]},\n        \"cfads_3\": {\"value\": 40, \"unit\": \"million_rub\", \"period\": 3, \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!D10]\"}]},\n        \"cfads_4\": {\"value\": 43, \"unit\": \"million_rub\", \"period\": 4, \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!E10]\"}]},\n        \"cfads_5\": {\"value\": 46, \"unit\": \"million_rub\", \"period\": 5, \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!F10]\"}]}\n    },\n    \"issues\": [\n        {\"field\": \"budget\", \"kind\": \"conflict\", \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!B4]\"}, {\"file\": \"project.docx\", \"locator\": \"[project.docx|paragraph:4]\"}]},\n        {\"field\": \"equity\", \"kind\": \"missing\", \"sources\": [{\"file\": \"project.docx\", \"locator\": \"[project.docx|paragraph:9]\"}]}\n    ]\n}",
+  "prompt_tokens": 1711,
+  "generated_tokens": 702,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 6579290624,
+  "elapsed_seconds": 51.54609706799988,
+  "finished_utc": "2026-11-15T21:09:28.511169+00:00"
+}

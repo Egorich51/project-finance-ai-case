@@ -104,6 +104,11 @@ class ExtractionTests(unittest.TestCase):
                 self.assertEqual(result['fields']['correct'], 10)
                 self.assertIn('cfads_1', result['incorrect_fields'])
 
+    def test_null_money_values_accept_equivalent_monetary_units(self):
+        predicted = copy.deepcopy(self.gold)
+        predicted['fields']['equity']['unit'] = 'thousand_rub'
+        self.assertEqual(evaluate(predicted, self.gold)['fields']['correct'], 11)
+
 
 if __name__ == '__main__':
     unittest.main()

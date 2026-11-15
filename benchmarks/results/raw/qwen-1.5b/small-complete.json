@@ -1,0 +1,16 @@
+{
+  "case_id": "small-complete",
+  "business": "small",
+  "variant": "complete",
+  "input_sha256": "b5228ab52b45a6c316e4f35043f84f7ddc2667cb0461936758b8670f8ede7a73",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "started_utc": "2026-11-15T21:03:04.423050+00:00",
+  "raw_text": "```json\n{\n  \"fields\": {\n    \"budget\": {\n      \"value\": 8000,\n      \"unit\": \"million_rub\",\n      \"period\": \"project\"\n    },\n    \"equity\": {\n      \"value\": null,\n      \"unit\": null,\n      \"period\": \"project\"\n    },\n    \"rate\": {\n      \"value\": 18 / 100,\n      \"unit\": \"%\",\n      \"period\": \"year\"\n    },\n    \"years\": {\n      \"value\": 5,\n      \"unit\": \"year\",\n      \"period\": \"project\"\n    },\n    \"stress_factor\": {\n      \"value\": 0.75,\n      \"unit\": \"\",\n      \"period\": \"year\"\n    },\n    \"dscr_floor\": {\n      \"value\": 1.2,\n      \"unit\": \"ratio\",\n      \"period\": \"year\"\n    },\n    \"cfads_1\": {\n      \"value\": 2000,\n      \"unit\": \"thousand_rub\",\n      \"period\": \"year\"\n    },\n    \"cfads_2\": {\n      \"value\": 2200,\n      \"unit\": \"thousand_rub\",\n      \"period\": \"year\"\n    },\n    \"cfads_3\": {\n      \"value\": 2400,\n      \"unit\": \"thousand_rub\",\n      \"period\": \"year\"\n    },\n    \"cfads_4\": {\n      \"value\": 2600,\n      \"unit\": \"thousand_rub\",\n      \"period\": \"year\"\n    },\n    \"cfads_5\": {\n      \"value\": 2800,\n      \"unit\": \"thousand_rub\",\n      \"period\": \"year\"\n    }\n  },\n  \"issues\": [\n    {\n      \"field\": \"equity\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    }\n  ]\n}\n```",
+  "prompt_tokens": 1730,
+  "generated_tokens": 438,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 1619149312,
+  "elapsed_seconds": 29.087847717000045,
+  "finished_utc": "2026-11-15T21:03:33.545471+00:00"
+}

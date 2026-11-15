@@ -1,0 +1,16 @@
+{
+  "case_id": "medium-complete",
+  "business": "medium",
+  "variant": "complete",
+  "input_sha256": "98c2e084e2c1fc4485f4a0b0f44b96be5d873636b137c625fd483ad4536a7ca2",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "started_utc": "2026-11-15T21:04:43.853986+00:00",
+  "raw_text": "```json\n{\n  \"fields\": {\n    \"budget\": {\n      \"value\": 120000,\n      \"unit\": \"thousand_rub\",\n      \"period\": \"project\"\n    },\n    \"equity\": {\n      \"value\": null,\n      \"unit\": null,\n      \"period\": \"project\"\n    },\n    \"rate\": {\n      \"value\": 16 / 100,\n      \"unit\": \"%\",\n      \"period\": \"year\"\n    },\n    \"years\": {\n      \"value\": 5,\n      \"unit\": \"year\",\n      \"period\": \"project\"\n    },\n    \"stress_factor\": {\n      \"value\": 0.8,\n      \"unit\": \"\",\n      \"period\": \"project\"\n    },\n    \"dscr_floor\": {\n      \"value\": 1.2,\n      \"unit\": \"\",\n      \"period\": \"year\"\n    },\n    \"cfads_1\": {\n      \"value\": 32,\n      \"unit\": \"million_rub\",\n      \"period\": \"year\"\n    },\n    \"cfads_2\": {\n      \"value\": 36,\n      \"unit\": \"million_rub\",\n      \"period\": \"year\"\n    },\n    \"cfads_3\": {\n      \"value\": 40,\n      \"unit\": \"million_rub\",\n      \"period\": \"year\"\n    },\n    \"cfads_4\": {\n      \"value\": 43,\n      \"unit\": \"million_rub\",\n      \"period\": \"year\"\n    },\n    \"cfads_5\": {\n      \"value\": 46,\n      \"unit\": \"million_rub\",\n      \"period\": \"year\"\n    }\n  },\n  \"issues\": [\n    {\n      \"field\": \"equity\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    }\n  ]\n}\n```",
+  "prompt_tokens": 1711,
+  "generated_tokens": 423,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 1608182272,
+  "elapsed_seconds": 21.525663116000032,
+  "finished_utc": "2026-11-15T21:05:05.384495+00:00"
+}

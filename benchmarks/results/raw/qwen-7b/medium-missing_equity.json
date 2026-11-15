@@ -1,0 +1,16 @@
+{
+  "case_id": "medium-missing_equity",
+  "business": "medium",
+  "variant": "missing_equity",
+  "input_sha256": "5d2047b87bc1b4ee43ffc9a357de7ff5ed4004d582b2aaa5b9f7edd3499a899c",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "started_utc": "2026-11-15T21:09:28.511613+00:00",
+  "raw_text": "{\n    \"fields\": {\n        \"budget\": {\"value\": 120000, \"unit\": \"thousand_rub\", \"period\": \"project\", \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!B4]\"}]},\n        \"equity\": {\"value\": null, \"unit\": \"thousand_rub\", \"period\": \"project\", \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!B5]\"}, {\"file\": \"project.docx\", \"locator\": \"[project.docx|paragraph:9]\"}]},\n        \"rate\": {\"value\": 0.16, \"unit\": \"fraction\", \"period\": \"project\", \"sources\": [{\"file\": \"project.docx\", \"locator\": \"[project.docx|paragraph:5]\"}]},\n        \"years\": {\"value\": 5, \"unit\": \"year\", \"period\": \"project\", \"sources\": [{\"file\": \"project.docx\", \"locator\": \"[project.docx|paragraph:6]\"}]},\n        \"stress_factor\": {\"value\": 0.8, \"unit\": \"fraction\", \"period\": \"project\", \"sources\": [{\"file\": \"project.docx\", \"locator\": \"[project.docx|paragraph:7]\"}]},\n        \"dscr_floor\": {\"value\": 1.2, \"unit\": \"ratio\", \"period\": \"project\", \"sources\": [{\"file\": \"project.docx\", \"paragraph\": \"[project.docx|paragraph:8]\"}]},\n        \"cfads_1\": {\"value\": 32, \"unit\": \"million_rub\", \"period\": 1, \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!B10]\"}]},\n        \"cfads_2\": {\"value\": 36, \"unit\": \"million_rub\", \"period\": 2, \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!C10]\"}]},\n        \"cfads_3\": {\"value\": 40, \"unit\": \"million_rub\", \"period\": 3, \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!D10]\"}]},\n        \"cfads_4\": {\"value\": 43, \"unit\": \"million_rub\", \"period\": 4, \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!E10]\"}]},\n        \"cfads_5\": {\"value\": 46, \"unit\": \"million_rub\", \"period\": 5, \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!F10]\"}]}\n    },\n    \"issues\": [\n        {\"field\": \"equity\", \"kind\": \"missing\", \"sources\": [{\"file\": \"financials.xlsx\", \"locator\": \"[financials.xlsx|Forecast!B5]\"}, {\"file\": \"project.docx\", \"locator\": \"[project.docx|paragraph:9]\"}]}\n    ]\n}",
+  "prompt_tokens": 1718,
+  "generated_tokens": 679,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 6585661440,
+  "elapsed_seconds": 49.84577827299995,
+  "finished_utc": "2026-11-15T21:10:18.362738+00:00"
+}

@@ -39,6 +39,23 @@ class GpuBenchmarkTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 score_gpu_records(root / 'runs', root / 'cases')
 
+    def test_duplicate_model_case_cannot_inflate_the_comparison(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            build_benchmark(root / 'cases')
+            item = build_gpu_inputs(root / 'cases')[0]
+            runs = root / 'runs'
+            runs.mkdir()
+            record = {'case_id': item['case_id'], 'model': 'test-only-model', 'input_sha256': item['input_sha256'], 'raw_text': '{}'}
+            for name in ('first.json', 'retry.json'):
+                (runs / name).write_text(json.dumps(record))
+            with self.assertRaises(ValueError):
+                score_gpu_records(runs, root / 'cases')
+
+    def test_committed_gpu_payload_matches_frozen_source_documents(self):
+        root = Path(__file__).resolve().parents[1] / 'benchmarks'
+        self.assertEqual(json.loads((root / 'gpu-inputs.json').read_text()), build_gpu_inputs(root / 'cases'))
+
 
 if __name__ == '__main__':
     unittest.main()

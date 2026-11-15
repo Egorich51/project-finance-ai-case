@@ -1,0 +1,20 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "gpu_name": "Tesla T4",
+  "physical_gpu_index": "1",
+  "gpu_total_memory_bytes": 15636037632,
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "transformers": "5.20.2",
+    "accelerate": "1.15.0",
+    "bitsandbytes": "0.50.2"
+  },
+  "quantization": "4-bit NF4, double quantization, FP16 compute",
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 2500,
+    "seed": 42
+  },
+  "started_utc": "2026-11-15T21:02:34.375302+00:00"
+}

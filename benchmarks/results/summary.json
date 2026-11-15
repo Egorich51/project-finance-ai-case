@@ -1,0 +1,643 @@
+{
+  "summary": [
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "fields_correct": 0,
+      "fields_total": 66,
+      "sources_correct": 0,
+      "sources_total": 78,
+      "issues_true_positive": 0,
+      "issues_false_negative": 4,
+      "issues_false_positive": 0,
+      "parse_failures": 6,
+      "top_level_contract": 0,
+      "median_generation_seconds": 26.061320731500018
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "fields_correct": 64,
+      "fields_total": 66,
+      "sources_correct": 0,
+      "sources_total": 78,
+      "issues_true_positive": 4,
+      "issues_false_negative": 0,
+      "issues_false_positive": 18,
+      "parse_failures": 0,
+      "top_level_contract": 6,
+      "median_generation_seconds": 57.31761655300005
+    }
+  ],
+  "cases": [
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "case_id": "medium-budget_conflict",
+      "business": "medium",
+      "variant": "budget_conflict",
+      "parse_error": "Expecting value: line 1 column 1 (char 0)",
+      "top_level_contract": false,
+      "evaluation": {
+        "fields": {
+          "correct": 0,
+          "total": 11,
+          "accuracy": 0.0
+        },
+        "sources": {
+          "correct": 0,
+          "total": 13,
+          "accuracy": 0.0
+        },
+        "issues": {
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "missed": [
+            [
+              "budget",
+              "conflict"
+            ]
+          ],
+          "unexpected": []
+        },
+        "incorrect_fields": [
+          "budget",
+          "equity",
+          "rate",
+          "years",
+          "stress_factor",
+          "dscr_floor",
+          "cfads_1",
+          "cfads_2",
+          "cfads_3",
+          "cfads_4",
+          "cfads_5"
+        ],
+        "unexpected_fields": [],
+        "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником."
+      },
+      "elapsed_seconds": 23.257989055000053,
+      "generated_tokens": 458,
+      "record": "qwen-1.5b/medium-budget_conflict.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "case_id": "medium-complete",
+      "business": "medium",
+      "variant": "complete",
+      "parse_error": "Expecting value: line 1 column 1 (char 0)",
+      "top_level_contract": false,
+      "evaluation": {
+        "fields": {
+          "correct": 0,
+          "total": 11,
+          "accuracy": 0.0
+        },
+        "sources": {
+          "correct": 0,
+          "total": 13,
+          "accuracy": 0.0
+        },
+        "issues": {
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 0,
+          "missed": [],
+          "unexpected": []
+        },
+        "incorrect_fields": [
+          "budget",
+          "equity",
+          "rate",
+          "years",
+          "stress_factor",
+          "dscr_floor",
+          "cfads_1",
+          "cfads_2",
+          "cfads_3",
+          "cfads_4",
+          "cfads_5"
+        ],
+        "unexpected_fields": [],
+        "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником."
+      },
+      "elapsed_seconds": 21.525663116000032,
+      "generated_tokens": 423,
+      "record": "qwen-1.5b/medium-complete.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "case_id": "medium-missing_equity",
+      "business": "medium",
+      "variant": "missing_equity",
+      "parse_error": "Expecting value: line 1 column 1 (char 0)",
+      "top_level_contract": false,
+      "evaluation": {
+        "fields": {
+          "correct": 0,
+          "total": 11,
+          "accuracy": 0.0
+        },
+        "sources": {
+          "correct": 0,
+          "total": 13,
+          "accuracy": 0.0
+        },
+        "issues": {
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "missed": [
+            [
+              "equity",
+              "missing"
+            ]
+          ],
+          "unexpected": []
+        },
+        "incorrect_fields": [
+          "budget",
+          "equity",
+          "rate",
+          "years",
+          "stress_factor",
+          "dscr_floor",
+          "cfads_1",
+          "cfads_2",
+          "cfads_3",
+          "cfads_4",
+          "cfads_5"
+        ],
+        "unexpected_fields": [],
+        "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником."
+      },
+      "elapsed_seconds": 21.324443115000122,
+      "generated_tokens": 423,
+      "record": "qwen-1.5b/medium-missing_equity.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "case_id": "small-budget_conflict",
+      "business": "small",
+      "variant": "budget_conflict",
+      "parse_error": "Expecting value: line 1 column 1 (char 0)",
+      "top_level_contract": false,
+      "evaluation": {
+        "fields": {
+          "correct": 0,
+          "total": 11,
+          "accuracy": 0.0
+        },
+        "sources": {
+          "correct": 0,
+          "total": 13,
+          "accuracy": 0.0
+        },
+        "issues": {
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "missed": [
+            [
+              "budget",
+              "conflict"
+            ]
+          ],
+          "unexpected": []
+        },
+        "incorrect_fields": [
+          "budget",
+          "equity",
+          "rate",
+          "years",
+          "stress_factor",
+          "dscr_floor",
+          "cfads_1",
+          "cfads_2",
+          "cfads_3",
+          "cfads_4",
+          "cfads_5"
+        ],
+        "unexpected_fields": [],
+        "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником."
+      },
+      "elapsed_seconds": 41.43031173400004,
+      "generated_tokens": 795,
+      "record": "qwen-1.5b/small-budget_conflict.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "case_id": "small-complete",
+      "business": "small",
+      "variant": "complete",
+      "parse_error": "Expecting value: line 1 column 1 (char 0)",
+      "top_level_contract": false,
+      "evaluation": {
+        "fields": {
+          "correct": 0,
+          "total": 11,
+          "accuracy": 0.0
+        },
+        "sources": {
+          "correct": 0,
+          "total": 13,
+          "accuracy": 0.0
+        },
+        "issues": {
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 0,
+          "missed": [],
+          "unexpected": []
+        },
+        "incorrect_fields": [
+          "budget",
+          "equity",
+          "rate",
+          "years",
+          "stress_factor",
+          "dscr_floor",
+          "cfads_1",
+          "cfads_2",
+          "cfads_3",
+          "cfads_4",
+          "cfads_5"
+        ],
+        "unexpected_fields": [],
+        "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником."
+      },
+      "elapsed_seconds": 29.087847717000045,
+      "generated_tokens": 438,
+      "record": "qwen-1.5b/small-complete.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "case_id": "small-missing_equity",
+      "business": "small",
+      "variant": "missing_equity",
+      "parse_error": "Expecting value: line 1 column 1 (char 0)",
+      "top_level_contract": false,
+      "evaluation": {
+        "fields": {
+          "correct": 0,
+          "total": 11,
+          "accuracy": 0.0
+        },
+        "sources": {
+          "correct": 0,
+          "total": 13,
+          "accuracy": 0.0
+        },
+        "issues": {
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "missed": [
+            [
+              "equity",
+              "missing"
+            ]
+          ],
+          "unexpected": []
+        },
+        "incorrect_fields": [
+          "budget",
+          "equity",
+          "rate",
+          "years",
+          "stress_factor",
+          "dscr_floor",
+          "cfads_1",
+          "cfads_2",
+          "cfads_3",
+          "cfads_4",
+          "cfads_5"
+        ],
+        "unexpected_fields": [],
+        "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником."
+      },
+      "elapsed_seconds": 28.864652407999984,
+      "generated_tokens": 574,
+      "record": "qwen-1.5b/small-missing_equity.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "case_id": "medium-budget_conflict",
+      "business": "medium",
+      "variant": "budget_conflict",
+      "parse_error": null,
+      "top_level_contract": true,
+      "evaluation": {
+        "fields": {
+          "correct": 10,
+          "total": 11,
+          "accuracy": 0.9090909090909091
+        },
+        "sources": {
+          "correct": 0,
+          "total": 13,
+          "accuracy": 0.0
+        },
+        "issues": {
+          "true_positive": 1,
+          "false_positive": 1,
+          "false_negative": 0,
+          "missed": [],
+          "unexpected": [
+            [
+              "equity",
+              "missing"
+            ]
+          ]
+        },
+        "incorrect_fields": [
+          "budget"
+        ],
+        "unexpected_fields": [],
+        "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником."
+      },
+      "elapsed_seconds": 51.54609706799988,
+      "generated_tokens": 702,
+      "record": "qwen-7b/medium-budget_conflict.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "case_id": "medium-complete",
+      "business": "medium",
+      "variant": "complete",
+      "parse_error": null,
+      "top_level_contract": true,
+      "evaluation": {
+        "fields": {
+          "correct": 11,
+          "total": 11,
+          "accuracy": 1.0
+        },
+        "sources": {
+          "correct": 0,
+          "total": 13,
+          "accuracy": 0.0
+        },
+        "issues": {
+          "true_positive": 0,
+          "false_positive": 8,
+          "false_negative": 0,
+          "missed": [],
+          "unexpected": [
+            [
+              "budget",
+              "missing"
+            ],
+            [
+              "cfads_1",
+              "missing"
+            ],
+            [
+              "cfads_2",
+              "missing"
+            ],
+            [
+              "cfads_3",
+              "missing"
+            ],
+            [
+              "cfads_4",
+              "missing"
+            ],
+            [
+              "cfads_5",
+              "missing"
+            ],
+            [
+              "rate",
+              "missing"
+            ],
+            [
+              "stress_factor",
+              "missing"
+            ]
+          ]
+        },
+        "incorrect_fields": [],
+        "unexpected_fields": [],
+        "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником."
+      },
+      "elapsed_seconds": 108.16002684399996,
+      "generated_tokens": 1402,
+      "record": "qwen-7b/medium-complete.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "case_id": "medium-missing_equity",
+      "business": "medium",
+      "variant": "missing_equity",
+      "parse_error": null,
+      "top_level_contract": true,
+      "evaluation": {
+        "fields": {
+          "correct": 11,
+          "total": 11,
+          "accuracy": 1.0
+        },
+        "sources": {
+          "correct": 0,
+          "total": 13,
+          "accuracy": 0.0
+        },
+        "issues": {
+          "true_positive": 1,
+          "false_positive": 0,
+          "false_negative": 0,
+          "missed": [],
+          "unexpected": []
+        },
+        "incorrect_fields": [],
+        "unexpected_fields": [],
+        "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником."
+      },
+      "elapsed_seconds": 49.84577827299995,
+      "generated_tokens": 679,
+      "record": "qwen-7b/medium-missing_equity.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "case_id": "small-budget_conflict",
+      "business": "small",
+      "variant": "budget_conflict",
+      "parse_error": null,
+      "top_level_contract": true,
+      "evaluation": {
+        "fields": {
+          "correct": 10,
+          "total": 11,
+          "accuracy": 0.9090909090909091
+        },
+        "sources": {
+          "correct": 0,
+          "total": 13,
+          "accuracy": 0.0
+        },
+        "issues": {
+          "true_positive": 1,
+          "false_positive": 1,
+          "false_negative": 0,
+          "missed": [],
+          "unexpected": [
+            [
+              "cfads_1",
+              "missing"
+            ]
+          ]
+        },
+        "incorrect_fields": [
+          "budget"
+        ],
+        "unexpected_fields": [],
+        "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником."
+      },
+      "elapsed_seconds": 56.03112488499994,
+      "generated_tokens": 760,
+      "record": "qwen-7b/small-budget_conflict.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "case_id": "small-complete",
+      "business": "small",
+      "variant": "complete",
+      "parse_error": null,
+      "top_level_contract": true,
+      "evaluation": {
+        "fields": {
+          "correct": 11,
+          "total": 11,
+          "accuracy": 1.0
+        },
+        "sources": {
+          "correct": 0,
+          "total": 13,
+          "accuracy": 0.0
+        },
+        "issues": {
+          "true_positive": 0,
+          "false_positive": 7,
+          "false_negative": 0,
+          "missed": [],
+          "unexpected": [
+            [
+              "budget",
+              "conflict"
+            ],
+            [
+              "cfads_1",
+              "missing"
+            ],
+            [
+              "cfads_2",
+              "missing"
+            ],
+            [
+              "cfads_3",
+              "missing"
+            ],
+            [
+              "cfads_4",
+              "missing"
+            ],
+            [
+              "cfads_5",
+              "missing"
+            ],
+            [
+              "rate",
+              "missing"
+            ]
+          ]
+        },
+        "incorrect_fields": [],
+        "unexpected_fields": [],
+        "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником."
+      },
+      "elapsed_seconds": 70.73618535100002,
+      "generated_tokens": 986,
+      "record": "qwen-7b/small-complete.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "case_id": "small-missing_equity",
+      "business": "small",
+      "variant": "missing_equity",
+      "parse_error": null,
+      "top_level_contract": true,
+      "evaluation": {
+        "fields": {
+          "correct": 11,
+          "total": 11,
+          "accuracy": 1.0
+        },
+        "sources": {
+          "correct": 0,
+          "total": 13,
+          "accuracy": 0.0
+        },
+        "issues": {
+          "true_positive": 1,
+          "false_positive": 1,
+          "false_negative": 0,
+          "missed": [],
+          "unexpected": [
+            [
+              "budget",
+              "conflict"
+            ]
+          ]
+        },
+        "incorrect_fields": [],
+        "unexpected_fields": [],
+        "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником."
+      },
+      "elapsed_seconds": 58.60410822100016,
+      "generated_tokens": 790,
+      "record": "qwen-7b/small-missing_equity.json"
+    }
+  ],
+  "environment": {
+    "qwen-1.5b": {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "gpu_name": "Tesla T4",
+      "physical_gpu_index": "0",
+      "gpu_total_memory_bytes": 15636037632,
+      "versions": {
+        "torch": "2.11.0+cu130",
+        "transformers": "5.20.2",
+        "accelerate": "1.15.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "quantization": "4-bit NF4, double quantization, FP16 compute",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 2500,
+        "seed": 42
+      },
+      "started_utc": "2026-11-15T21:02:34.427571+00:00"
+    },
+    "qwen-7b": {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "gpu_name": "Tesla T4",
+      "physical_gpu_index": "1",
+      "gpu_total_memory_bytes": 15636037632,
+      "versions": {
+        "torch": "2.11.0+cu130",
+        "transformers": "5.20.2",
+        "accelerate": "1.15.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "quantization": "4-bit NF4, double quantization, FP16 compute",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 2500,
+        "seed": 42
+      },
+      "started_utc": "2026-11-15T21:02:34.375302+00:00"
+    }
+  }
+}

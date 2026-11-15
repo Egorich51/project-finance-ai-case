@@ -1,0 +1,16 @@
+{
+  "case_id": "medium-budget_conflict",
+  "business": "medium",
+  "variant": "budget_conflict",
+  "input_sha256": "f6da255378b72a34d774291eb5f6af6608d3c35bc7f949a568f59841e99b2204",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "started_utc": "2026-11-15T21:05:05.385067+00:00",
+  "raw_text": "```json\n{\n  \"fields\": {\n    \"budget\": {\n      \"value\": 120000,\n      \"unit\": \"million_rub\",\n      \"period\": \"project\"\n    },\n    \"equity\": {\n      \"value\": null,\n      \"unit\": null,\n      \"period\": \"project\"\n    },\n    \"rate\": {\n      \"value\": 16 / 100,\n      \"unit\": \"%\",\n      \"period\": \"year\"\n    },\n    \"years\": {\n      \"value\": 5,\n      \"unit\": \"year\",\n      \"period\": \"project\"\n    },\n    \"stress_factor\": {\n      \"value\": 0.8,\n      \"unit\": \"\",\n      \"period\": \"year\"\n    },\n    \"dscr_floor\": {\n      \"value\": 1.2,\n      \"unit\": \"\",\n      \"period\": \"year\"\n    }\n  },\n  \"issues\": [\n    {\n      \"field\": \"cfads_1\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    },\n    {\n      \"field\": \"cfads_2\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    },\n    {\n      \"field\": \"cfads_3\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    },\n    {\n      \"field\": \"cfads_4\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    },\n    {\n      \"field\": \"cfads_5\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    }\n  ]\n}\n```",
+  "prompt_tokens": 1711,
+  "generated_tokens": 458,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 1608180736,
+  "elapsed_seconds": 23.257989055000053,
+  "finished_utc": "2026-11-15T21:05:28.648115+00:00"
+}

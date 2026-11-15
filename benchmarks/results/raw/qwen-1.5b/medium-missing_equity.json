@@ -1,0 +1,16 @@
+{
+  "case_id": "medium-missing_equity",
+  "business": "medium",
+  "variant": "missing_equity",
+  "input_sha256": "5d2047b87bc1b4ee43ffc9a357de7ff5ed4004d582b2aaa5b9f7edd3499a899c",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "started_utc": "2026-11-15T21:05:28.648493+00:00",
+  "raw_text": "```json\n{\n  \"fields\": {\n    \"budget\": {\n      \"value\": 120000,\n      \"unit\": \"thousand_rub\",\n      \"period\": \"project\"\n    },\n    \"equity\": {\n      \"value\": null,\n      \"unit\": null,\n      \"period\": \"project\"\n    },\n    \"rate\": {\n      \"value\": 16 / 100,\n      \"unit\": \"%\",\n      \"period\": \"year\"\n    },\n    \"years\": {\n      \"value\": 5,\n      \"unit\": \"year\",\n      \"period\": \"project\"\n    },\n    \"stress_factor\": {\n      \"value\": 0.8,\n      \"unit\": \"\",\n      \"period\": \"project\"\n    },\n    \"dscr_floor\": {\n      \"value\": 1.2,\n      \"unit\": \"\",\n      \"period\": \"year\"\n    },\n    \"cfads_1\": {\n      \"value\": 32,\n      \"unit\": \"million_rub\",\n      \"period\": \"year\"\n    },\n    \"cfads_2\": {\n      \"value\": 36,\n      \"unit\": \"million_rub\",\n      \"period\": \"year\"\n    },\n    \"cfads_3\": {\n      \"value\": 40,\n      \"unit\": \"million_rub\",\n      \"period\": \"year\"\n    },\n    \"cfads_4\": {\n      \"value\": 43,\n      \"unit\": \"million_rub\",\n      \"period\": \"year\"\n    },\n    \"cfads_5\": {\n      \"value\": 46,\n      \"unit\": \"million_rub\",\n      \"period\": \"year\"\n    }\n  },\n  \"issues\": [\n    {\n      \"field\": \"equity\",\n      \"kind\": \"missing\",\n      \"sources\": [\n        {\n          \"file\": \"project.docx\",\n          \"locator\": \"paragraph:10\"\n        }\n      ]\n    }\n  ]\n}\n```",
+  "prompt_tokens": 1718,
+  "generated_tokens": 423,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 1611223040,
+  "elapsed_seconds": 21.324443115000122,
+  "finished_utc": "2026-11-15T21:05:49.978195+00:00"
+}
