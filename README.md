@@ -70,7 +70,7 @@ python scripts/summarize_gpu_benchmark.py
 FINANCE_SOFFICE=/path/to/soffice python -m unittest tests.test_excel_engine -v
 ```
 
-Для нового GPU-запуска используйте [worker](scripts/run_gpu_benchmark.py); аргументы доступны через `--help`. Точные версии библиотек, revisions моделей и настройки сохранены в environment.json каждого запуска. Ссылки и токены доступа к Kaggle в репозиторий не включены.
+Для нового GPU-запуска используйте [worker](scripts/run_gpu_benchmark.py); аргументы доступны через `--help`. Он читает уже загруженные веса из `--cache`: предварительно скачайте обе модели через `huggingface_hub.snapshot_download` с revisions из environment.json. Нужны Torch, Transformers, Accelerate и bitsandbytes; точные версии рабочего окружения сохранены в метаданных. Для каждого нового прогона используйте отдельный каталог `--output`, чтобы не смешивать старые ответы с новым окружением. Ссылки и токены доступа к Kaggle в репозиторий не включены.
 
 ## Формула расчёта
 
@@ -87,3 +87,5 @@ CFADS — денежный поток для обслуживания долга
 [Предварительный опыт с маленькой моделью в Ollama](output/research.md) сохранён отдельно вместе с [исходным кейсом](case/). Его результаты не смешиваются с новым сравнением на GPU.
 
 Код: [генерация кейсов](src/benchmark.py), [оценка](src/gpu_benchmark.py), [расчёт](src/finance.py), [экспорт](src/report.py).
+
+[Протокол итоговой проверки](docs/benchmark-verification.md).
