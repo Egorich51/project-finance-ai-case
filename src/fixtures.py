@@ -4,6 +4,7 @@ from pathlib import Path
 
 from docx import Document
 from docx.shared import Cm, Pt, RGBColor
+from docx.oxml.ns import qn
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 
@@ -19,6 +20,10 @@ def build_case(destination: Path) -> None:
     document.styles['Normal'].font.size = Pt(11)
     document.styles['Normal'].paragraph_format.space_after = Pt(10)
     document.styles['Title'].font.color.rgb = RGBColor(0, 0, 0)
+    title_properties = document.styles['Title'].element.find(qn('w:pPr'))
+    if title_properties is not None:
+        for border in list(title_properties.findall(qn('w:pBdr'))):
+            title_properties.remove(border)
     document.add_paragraph('Проект приобретения оборудования', 'Title')
     paragraphs = [
         'Синтетический пример для технической демонстрации. Все данные вымышлены.',

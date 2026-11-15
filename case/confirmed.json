@@ -1,0 +1,39 @@
+{
+  "case_id": "synthetic-equipment-001",
+  "version": "confirmed-v1",
+  "budget": 100,
+  "equity": 40,
+  "rate": 0.15,
+  "years": 5,
+  "cfads": [24, 26, 28, 30, 32],
+  "stress_factor": 0.8,
+  "dscr_floor": 1.2,
+  "unit": "million_rub",
+  "resolutions": [
+    {
+      "field": "budget",
+      "status": "confirmed",
+      "value": 100,
+      "confirmed_by": "case_author",
+      "note": "Автор синтетического примера задал уточнение: действующий бюджет 100 млн рублей; 110 млн в таблице — устаревшая версия. Это новое условие примера, а не вывод AI.",
+      "original_candidates": [
+        {"value": 100, "unit": "million_rub", "file": "project.docx", "locator": "paragraph:4"},
+        {"value": 110000, "unit": "thousand_rub", "file": "financials.xlsx", "locator": "Forecast!B4"}
+      ]
+    },
+    {
+      "field": "equity",
+      "status": "confirmed",
+      "value": 40,
+      "confirmed_by": "case_author",
+      "note": "Автор добавил собственное участие 40 млн рублей для продолжения расчётной демонстрации. В исходных документах этой суммы нет. Подтверждение специалистом банка не проводилось.",
+      "original_value": null
+    }
+  ],
+  "assumptions": [
+    "Все данные и правила вымышлены для технической демонстрации.",
+    "CFADS задан напрямую; налоги, оборотный капитал и поддерживающий CAPEX отдельно не моделируются.",
+    "Комиссий и льготного периода нет; годовое равномерное погашение основного долга.",
+    "При недостаточном пределе кредита положительное решение не формируется; показывается дефицит."
+  ]
+}

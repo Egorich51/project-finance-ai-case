@@ -1,0 +1,45 @@
+{
+  "fields": {
+    "correct": 1,
+    "total": 11,
+    "accuracy": 0.09090909090909091
+  },
+  "sources": {
+    "correct": 4,
+    "total": 12,
+    "accuracy": 0.3333333333333333
+  },
+  "issues": {
+    "true_positive": 0,
+    "false_positive": 0,
+    "false_negative": 2,
+    "missed": [
+      [
+        "budget",
+        "conflict"
+      ],
+      [
+        "equity",
+        "missing"
+      ]
+    ],
+    "unexpected": []
+  },
+  "incorrect_fields": [
+    "budget",
+    "equity",
+    "rate",
+    "stress_factor",
+    "dscr_floor",
+    "cfads_1",
+    "cfads_2",
+    "cfads_3",
+    "cfads_4",
+    "cfads_5"
+  ],
+  "unexpected_fields": [
+    "issues"
+  ],
+  "source_metric_note": "Проверка адресов источников отдельно от правильности значений; не доказывает смысловую поддержку значения источником.",
+  "parse_error": null
+}

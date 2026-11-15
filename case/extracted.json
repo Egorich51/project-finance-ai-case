@@ -1,0 +1,217 @@
+{
+  "fields": {
+    "budget": {
+      "value": 100000,
+      "unit": "million_rub",
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:4"
+        }
+      ]
+    },
+    "equity": {
+      "value": null,
+      "unit": null,
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:10"
+        }
+      ]
+    },
+    "rate": {
+      "value": 15,
+      "unit": "%",
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:5"
+        }
+      ]
+    },
+    "years": {
+      "value": 5,
+      "unit": "year",
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:6"
+        }
+      ]
+    },
+    "stress_factor": {
+      "value": 0.8,
+      "unit": null,
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:8"
+        }
+      ]
+    },
+    "dscr_floor": {
+      "value": 1.2,
+      "unit": null,
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:8"
+        }
+      ]
+    },
+    "cfads_1": {
+      "value": 24,
+      "unit": null,
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:10"
+        }
+      ]
+    },
+    "cfads_2": {
+      "value": 26,
+      "unit": null,
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:10"
+        }
+      ]
+    },
+    "cfads_3": {
+      "value": 28,
+      "unit": null,
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:10"
+        }
+      ]
+    },
+    "cfads_4": {
+      "value": 30,
+      "unit": null,
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:10"
+        }
+      ]
+    },
+    "cfads_5": {
+      "value": 32,
+      "unit": null,
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:10"
+        }
+      ]
+    },
+    "issues": [
+      {
+        "field": "budget",
+        "kind": "missing",
+        "sources": [
+          {
+            "file": "project.docx",
+            "locator": "paragraph:4"
+          }
+        ]
+      },
+      {
+        "field": "equity",
+        "kind": "missing",
+        "sources": [
+          {
+            "file": "project.docx",
+            "locator": "paragraph:10"
+          }
+        ]
+      },
+      {
+        "field": "stress_factor",
+        "kind": "missing",
+        "sources": [
+          {
+            "file": "project.docx",
+            "locator": "paragraph:8"
+          }
+        ]
+      },
+      {
+        "field": "dscr_floor",
+        "kind": "missing",
+        "sources": [
+          {
+            "file": "project.docx",
+            "locator": "paragraph:8"
+          }
+        ]
+      },
+      {
+        "field": "cfads_1",
+        "kind": "missing",
+        "sources": [
+          {
+            "file": "project.docx",
+            "locator": "paragraph:10"
+          }
+        ]
+      },
+      {
+        "field": "cfads_2",
+        "kind": "missing",
+        "sources": [
+          {
+            "file": "project.docx",
+            "locator": "paragraph:10"
+          }
+        ]
+      },
+      {
+        "field": "cfads_3",
+        "kind": "missing",
+        "sources": [
+          {
+            "file": "project.docx",
+            "locator": "paragraph:10"
+          }
+        ]
+      },
+      {
+        "field": "cfads_4",
+        "kind": "missing",
+        "sources": [
+          {
+            "file": "project.docx",
+            "locator": "paragraph:10"
+          }
+        ]
+      },
+      {
+        "field": "cfads_5",
+        "kind": "missing",
+        "sources": [
+          {
+            "file": "project.docx",
+            "locator": "paragraph:10"
+          }
+        ]
+      }
+    ]
+  }
+}
