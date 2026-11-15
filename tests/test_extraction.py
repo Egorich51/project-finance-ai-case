@@ -95,6 +95,15 @@ class ExtractionTests(unittest.TestCase):
         predicted['fields']['cfads_1']['period'] = True
         self.assertEqual(evaluate(predicted, self.gold)['fields']['correct'], 10)
 
+    def test_nonstring_units_count_wrong_without_aborting_evaluation(self):
+        for unit in (['million_rub'], {'unit': 'million_rub'}):
+            with self.subTest(unit=unit):
+                predicted = copy.deepcopy(self.gold)
+                predicted['fields']['cfads_1']['unit'] = unit
+                result = evaluate(predicted, self.gold)
+                self.assertEqual(result['fields']['correct'], 10)
+                self.assertIn('cfads_1', result['incorrect_fields'])
+
 
 if __name__ == '__main__':
     unittest.main()

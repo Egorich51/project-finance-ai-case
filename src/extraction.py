@@ -34,7 +34,7 @@ def _normalized(item):
     value, unit = item.get('value'), item.get('unit')
     if value is None:
         return value, unit
-    if not _number(value):
+    if not _number(value) or not isinstance(unit, str):
         return 'invalid', unit
     scale = {'million_rub': 1, 'thousand_rub': 0.001, 'rub': 0.000001}
     if unit in scale:
