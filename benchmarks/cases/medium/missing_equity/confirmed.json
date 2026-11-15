@@ -1,0 +1,44 @@
+{
+  "budget": 120,
+  "equity": 45,
+  "rate": 0.16,
+  "years": 5,
+  "cfads": [
+    32,
+    36,
+    40,
+    43,
+    46
+  ],
+  "stress_factor": 0.8,
+  "dscr_floor": 1.2,
+  "case_id": "medium-missing_equity",
+  "project_title": "Расширение мебельного производства",
+  "unit": "million_rub",
+  "resolutions": [
+    {
+      "field": "budget",
+      "value": 120,
+      "status": "confirmed",
+      "confirmed_by": "case_author",
+      "note": "Автор синтетического примера задаёт действующий бюджет. Конфликтные версии в варианте budget_conflict требуют такого уточнения.",
+      "original_candidates": [
+        {
+          "value": 120,
+          "unit": "million_rub"
+        },
+        {
+          "value": 120000,
+          "unit": "thousand_rub"
+        }
+      ]
+    },
+    {
+      "field": "equity",
+      "value": 45,
+      "status": "confirmed",
+      "confirmed_by": "case_author",
+      "note": "В missing_equity это новое уточнение автора после проверки; в остальных вариантах сумма присутствует в документах."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+[financials.xlsx|Forecast!A1] Расширение мебельного производства — синтетические данные
+[financials.xlsx|Forecast!B1] null
+[financials.xlsx|Forecast!C1] null
+[financials.xlsx|Forecast!D1] null
+[financials.xlsx|Forecast!E1] null
+[financials.xlsx|Forecast!F1] null
+[financials.xlsx|Forecast!A2] Все данные вымышлены. Это входные сведения, а не банковская методика.
+[financials.xlsx|Forecast!B2] null
+[financials.xlsx|Forecast!C2] null
+[financials.xlsx|Forecast!D2] null
+[financials.xlsx|Forecast!E2] null
+[financials.xlsx|Forecast!F2] null
+[financials.xlsx|Forecast!A3] Показатель
+[financials.xlsx|Forecast!B3] Значение
+[financials.xlsx|Forecast!C3] Единица
+[financials.xlsx|Forecast!D3] null
+[financials.xlsx|Forecast!E3] null
+[financials.xlsx|Forecast!F3] null
+[financials.xlsx|Forecast!A4] Бюджет проекта
+[financials.xlsx|Forecast!B4] 120000
+[financials.xlsx|Forecast!C4] thousand_rub
+[financials.xlsx|Forecast!D4] null
+[financials.xlsx|Forecast!E4] null
+[financials.xlsx|Forecast!F4] null
+[financials.xlsx|Forecast!A5] Собственное участие — не предоставлено
+[financials.xlsx|Forecast!B5] null
+[financials.xlsx|Forecast!C5] thousand_rub
+[financials.xlsx|Forecast!D5] null
+[financials.xlsx|Forecast!E5] null
+[financials.xlsx|Forecast!F5] null
+[financials.xlsx|Forecast!A7] Единица CFADS
+[financials.xlsx|Forecast!B7] million_rub
+[financials.xlsx|Forecast!C7] null
+[financials.xlsx|Forecast!D7] null
+[financials.xlsx|Forecast!E7] null
+[financials.xlsx|Forecast!F7] null
+[financials.xlsx|Forecast!A8] CFADS — денежный поток до обслуживания долга, допущение автора
+[financials.xlsx|Forecast!B8] null
+[financials.xlsx|Forecast!C8] null
+[financials.xlsx|Forecast!D8] null
+[financials.xlsx|Forecast!E8] null
+[financials.xlsx|Forecast!F8] null
+[financials.xlsx|Forecast!A9] Год
+[financials.xlsx|Forecast!B9] 1
+[financials.xlsx|Forecast!C9] 2
+[financials.xlsx|Forecast!D9] 3
+[financials.xlsx|Forecast!E9] 4
+[financials.xlsx|Forecast!F9] 5
+[financials.xlsx|Forecast!A10] CFADS
+[financials.xlsx|Forecast!B10] 32
+[financials.xlsx|Forecast!C10] 36
+[financials.xlsx|Forecast!D10] 40
+[financials.xlsx|Forecast!E10] 43
+[financials.xlsx|Forecast!F10] 46
+[financials.xlsx|Forecast!A12] Все суммы и прогнозы вымышлены. Применять единицы из соответствующей строки.
+[financials.xlsx|Forecast!B12] null
+[financials.xlsx|Forecast!C12] null
+[financials.xlsx|Forecast!D12] null
+[financials.xlsx|Forecast!E12] null
+[financials.xlsx|Forecast!F12] null
+[project.docx|paragraph:1] Расширение мебельного производства
+[project.docx|paragraph:2] Синтетический пример для технической демонстрации. Все данные вымышлены.
+[project.docx|paragraph:3] Расширение мебельного производства. Прогнозный денежный поток для обслуживания долга (CFADS) приведён в financials.xlsx; он задан автором напрямую.
+[project.docx|paragraph:4] Бюджет проекта составляет 120 млн рублей. Сведения о бюджете также приведены в приложенной таблице.
+[project.docx|paragraph:5] Фиксированная ставка кредита — 16% годовых. Комиссии в примере не учитываются.
+[project.docx|paragraph:6] Срок кредита — 5 лет. Основной долг погашается равными ежегодными долями, проценты начисляются на остаток начала года.
+[project.docx|paragraph:7] Стрессовый сценарий: CFADS каждого года снижается на 20%, остальные условия сохраняются.
+[project.docx|paragraph:8] Демонстрационный порог DSCR — 1,2 в каждом году обоих сценариев. Это допущение автора, не методика банка.
+[project.docx|paragraph:9] Размер собственного участия в представленных документах не указан; требуется уточнение.
+[project.docx|paragraph:10] Перед расчётом необходимо проверить согласованность источников, периоды и единицы измерения. При нехватке критических данных расчёт должен быть остановлен.

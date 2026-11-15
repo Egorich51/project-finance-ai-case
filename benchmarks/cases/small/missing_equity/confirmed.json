@@ -1,0 +1,44 @@
+{
+  "budget": 8,
+  "equity": 3,
+  "rate": 0.18,
+  "years": 5,
+  "cfads": [
+    2,
+    2.2,
+    2.4,
+    2.6,
+    2.8
+  ],
+  "stress_factor": 0.75,
+  "dscr_floor": 1.2,
+  "case_id": "small-missing_equity",
+  "project_title": "Оснащение небольшой пекарни",
+  "unit": "million_rub",
+  "resolutions": [
+    {
+      "field": "budget",
+      "value": 8,
+      "status": "confirmed",
+      "confirmed_by": "case_author",
+      "note": "Автор синтетического примера задаёт действующий бюджет. Конфликтные версии в варианте budget_conflict требуют такого уточнения.",
+      "original_candidates": [
+        {
+          "value": 8,
+          "unit": "million_rub"
+        },
+        {
+          "value": 8000,
+          "unit": "thousand_rub"
+        }
+      ]
+    },
+    {
+      "field": "equity",
+      "value": 3,
+      "status": "confirmed",
+      "confirmed_by": "case_author",
+      "note": "В missing_equity это новое уточнение автора после проверки; в остальных вариантах сумма присутствует в документах."
+    }
+  ]
+}

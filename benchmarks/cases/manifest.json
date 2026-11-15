@@ -1,0 +1,50 @@
+[
+  {
+    "case_id": "small-complete",
+    "business": "small",
+    "variant": "complete",
+    "path": "small/complete",
+    "gold_sha256": "d080a39eea77b88595385de1c7f715e42e768c14a82d16f692f09cc8b3ff7d56",
+    "input_sha256": "008cb5746a5284f883c83fdfb7e20fa2d79ff86f9ff60beb9ac943c64d363d1b"
+  },
+  {
+    "case_id": "small-budget_conflict",
+    "business": "small",
+    "variant": "budget_conflict",
+    "path": "small/budget_conflict",
+    "gold_sha256": "c3d765b29dfbd9d06bc09363d4576bd8ecd2f5e11ebb85e630d8fceb3f30227b",
+    "input_sha256": "1490aa0efabfca5353c324fe8d96f3706cdaa81c00f810bd86651cb852eebd1a"
+  },
+  {
+    "case_id": "small-missing_equity",
+    "business": "small",
+    "variant": "missing_equity",
+    "path": "small/missing_equity",
+    "gold_sha256": "30ae355c1dae7222bb7f645ae4aa37e8cee3c28007b4b2bca44158e795c8520c",
+    "input_sha256": "8c65827dd6bed442641a8faec9bb8ba5da75e2f8eed13d9165cf0646c6ea3443"
+  },
+  {
+    "case_id": "medium-complete",
+    "business": "medium",
+    "variant": "complete",
+    "path": "medium/complete",
+    "gold_sha256": "9ace837f7e849566b4630cd8b03490fae67e7d13623038523c0e0e4d01fc5cfb",
+    "input_sha256": "5495492e008c18f4d6b5175ec534fa999010d806d7c8f3ffd9e17c8437dc504b"
+  },
+  {
+    "case_id": "medium-budget_conflict",
+    "business": "medium",
+    "variant": "budget_conflict",
+    "path": "medium/budget_conflict",
+    "gold_sha256": "406b4c59f07425e97bfcf2b4a5f9f0aa8f0eafe5e97d35a4329cf2659f01bd3a",
+    "input_sha256": "260df39f0c50057048b3b9fd85ded03db04bbc10ab3979d2147dec12d6440262"
+  },
+  {
+    "case_id": "medium-missing_equity",
+    "business": "medium",
+    "variant": "missing_equity",
+    "path": "medium/missing_equity",
+    "gold_sha256": "773af5dd277c2d3bbc5da033514f013082089acb5b68338c936c181727b194fd",
+    "input_sha256": "0936d0b2e1fb4251bfc73c64268b6fcf14c3f6a33a03b389e3a19c0c1e9cb1be"
+  }
+]
