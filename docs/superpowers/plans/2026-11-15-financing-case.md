@@ -76,10 +76,10 @@
 
 **Interfaces:** Consumes validated confirmed JSON. Produces `calculate(data: dict) -> dict` с ключами `need`, `capacity_base`, `capacity_stress`, `proposed_amount`, `funding_gap`, `base_schedule`, `stress_schedule`. Строка графика: `year`, `opening_debt`, `principal`, `interest`, `debt_service`, `cfads`, `dscr`, `closing_debt`. DSCR при нулевом debt_service — null, не Infinity.
 
-- [ ] Написать тесты `test_known_case`: need=60, base capacity≈74.53416149, stress capacity≈59.62732919, proposed≈59.62732919, gap≈0.37267081 (погрешность 1e-6); `test_zero_rate`: ставка 0 даёт stress capacity=80; `test_nonpositive_cfads`: при CFADS первого года 0 или -1 capacity=0; `test_invalid_terms`: отрицательная ставка, years=0 и несовпадающая длина CFADS дают ValueError; `test_schedule_conserves_principal`: сумма principal равна долгу, closing_debt последнего года≈0, минимум стрессового DSCR≈1.2.
+- [ ] Написать тесты `test_known_case`: need=60, base capacity≈57.14285714, stress capacity≈45.71428571, proposed≈45.71428571, gap≈14.28571429 (погрешность 1e-6); `test_zero_rate`: ставка 0 даёт stress capacity=80; proposed=60 из-за ограничения потребностью; `test_nonpositive_cfads`: при CFADS первого года 0 или -1 capacity=0; `test_invalid_terms`: отрицательная ставка, years=0 и несовпадающая длина CFADS дают ValueError; `test_schedule_conserves_principal`: сумма principal равна долгу, closing_debt последнего года≈0, минимум стрессового DSCR≈1.2.
 - [ ] Выполнить `python -m unittest tests.test_finance -v`: ожидается ошибка импорта.
 - [ ] Реализовать `calculate`. Для положительного CFADS предел в году t: CFADS[t] / (dscr_floor × (1/years + rate × (1 − t/years))), t начинается с 0. Предел сценария — минимум за годы. При неположительном CFADS предел 0. Proposed=min(max(budget−equity,0), capacity_base, capacity_stress); gap=need−proposed. Проценты на остаток начала года; равное погашение основного долга. При equity>budget need=0.
-- [ ] Повторить тесты: PASS. Сверить первый стрессовый год вручную: CFADS=19.2, обслуживание долга=16, DSCR=1.2 при proposed≈59.62732919.
+- [ ] Повторить тесты: PASS. Сверить первый стрессовый год вручную: CFADS=19.2, обслуживание долга=16, DSCR=1.2 при proposed≈45.71428571.
 - [ ] Commit: `feat: calculate transparent debt capacity`.
 
 ### Task 4: Один комплект для просмотра и воспроизведения — 40 минут

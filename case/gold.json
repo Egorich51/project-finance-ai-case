@@ -1,0 +1,180 @@
+{
+  "case_id": "synthetic-equipment-001",
+  "fields": {
+    "budget": {
+      "value": null,
+      "unit": "million_rub",
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:4"
+        },
+        {
+          "file": "financials.xlsx",
+          "locator": "Forecast!B4"
+        }
+      ],
+      "candidates": [
+        {
+          "value": 100,
+          "unit": "million_rub",
+          "period": "project",
+          "sources": [
+            {
+              "file": "project.docx",
+              "locator": "paragraph:4"
+            }
+          ]
+        },
+        {
+          "value": 110000,
+          "unit": "thousand_rub",
+          "period": "project",
+          "sources": [
+            {
+              "file": "financials.xlsx",
+              "locator": "Forecast!B4"
+            }
+          ]
+        }
+      ]
+    },
+    "equity": {
+      "value": null,
+      "unit": "million_rub",
+      "period": "project",
+      "sources": [
+        {
+          "file": "financials.xlsx",
+          "locator": "Forecast!A5"
+        }
+      ]
+    },
+    "rate": {
+      "value": 0.15,
+      "unit": "fraction",
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:5"
+        }
+      ]
+    },
+    "years": {
+      "value": 5,
+      "unit": "year",
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:6"
+        }
+      ]
+    },
+    "stress_factor": {
+      "value": 0.8,
+      "unit": "fraction",
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:7"
+        }
+      ]
+    },
+    "dscr_floor": {
+      "value": 1.2,
+      "unit": "ratio",
+      "period": "project",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:8"
+        }
+      ]
+    },
+    "cfads_1": {
+      "value": 24,
+      "unit": "million_rub",
+      "period": 1,
+      "sources": [
+        {
+          "file": "financials.xlsx",
+          "locator": "Forecast!B10"
+        }
+      ]
+    },
+    "cfads_2": {
+      "value": 26,
+      "unit": "million_rub",
+      "period": 2,
+      "sources": [
+        {
+          "file": "financials.xlsx",
+          "locator": "Forecast!C10"
+        }
+      ]
+    },
+    "cfads_3": {
+      "value": 28,
+      "unit": "million_rub",
+      "period": 3,
+      "sources": [
+        {
+          "file": "financials.xlsx",
+          "locator": "Forecast!D10"
+        }
+      ]
+    },
+    "cfads_4": {
+      "value": 30,
+      "unit": "million_rub",
+      "period": 4,
+      "sources": [
+        {
+          "file": "financials.xlsx",
+          "locator": "Forecast!E10"
+        }
+      ]
+    },
+    "cfads_5": {
+      "value": 32,
+      "unit": "million_rub",
+      "period": 5,
+      "sources": [
+        {
+          "file": "financials.xlsx",
+          "locator": "Forecast!F10"
+        }
+      ]
+    }
+  },
+  "issues": [
+    {
+      "field": "budget",
+      "kind": "conflict",
+      "sources": [
+        {
+          "file": "project.docx",
+          "locator": "paragraph:4"
+        },
+        {
+          "file": "financials.xlsx",
+          "locator": "Forecast!B4"
+        }
+      ]
+    },
+    {
+      "field": "equity",
+      "kind": "missing",
+      "sources": [
+        {
+          "file": "financials.xlsx",
+          "locator": "Forecast!A5"
+        }
+      ]
+    }
+  ]
+}
