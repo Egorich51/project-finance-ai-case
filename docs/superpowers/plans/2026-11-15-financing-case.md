@@ -1,6 +1,6 @@
 # Financing Case Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Подготовить за три часа воспроизводимый синтетический пример и короткое исследование для приложения к заявке по одной ссылке.
 
@@ -8,7 +8,7 @@
 
 **Tech Stack:** Python 3.11+, unittest, openpyxl, python-docx; готовая доступная языковая модель без обучения.
 
-**Spec:** `docs/superpowers/specs/2026-11-15-financing-case-design.md` — предложенный дизайн, требует проверки пользователем перед реализацией.
+**Spec:** `docs/superpowers/specs/2026-11-15-financing-case-design.md` — дизайн утверждён пользователем; выполнение в текущем чате, публикация в Egorich51.
 
 ## Global Constraints
 
@@ -52,11 +52,11 @@
 
 **Interfaces:** Produces `build_case(destination: pathlib.Path) -> None`. JSON поля имеют структуру `{value, unit, period, sources}`; источник — `{file, locator}`. Периоды CFADS: годы 1–5, остальных условий: `project`. Отсутствующее значение — null. Проблемы — `{field, kind, sources}`, kind: `missing` или `conflict`.
 
-- [ ] Написать тест `test_case_has_traceable_conflict_and_missing_equity`: прочитать созданные DOCX/XLSX; бюджет в DOCX 100 млн, в Excel 110000 тыс.; equity отсутствует; CFADS [24,26,28,30,32] млн; для всех эталонных значений существуют указанные ячейки/абзацы. Эталон хранит обе версии бюджета и две ожидаемые проблемы.
-- [ ] Выполнить `python -m unittest tests.test_fixtures -v`: ожидается ошибка импорта до реализации.
-- [ ] Реализовать `build_case` с фиксированными значениями дизайна; создать окружение и установить только openpyxl/python-docx. Сгенерировать документы в `case/`. Эталон создаётся до обращения к AI.
-- [ ] Повторить тест: PASS. Просмотреть текст DOCX и значения XLSX, убедиться в синтетической маркировке.
-- [ ] Инициализировать Git в текущей папке, если он по-прежнему отсутствует; добавлять только файлы задачи, не существующие пользовательские материалы. Commit: `feat: add synthetic financing case`.
+- [x] Написать тест `test_case_has_traceable_conflict_and_missing_equity`: прочитать созданные DOCX/XLSX; бюджет в DOCX 100 млн, в Excel 110000 тыс.; equity отсутствует; CFADS [24,26,28,30,32] млн; для всех эталонных значений существуют указанные ячейки/абзацы. Эталон хранит обе версии бюджета и две ожидаемые проблемы.
+- [x] Выполнить `python -m unittest tests.test_fixtures -v`: ожидается ошибка импорта до реализации.
+- [x] Реализовать `build_case` с фиксированными значениями дизайна; создать окружение и установить только openpyxl/python-docx. Сгенерировать документы в `case/`. Эталон создаётся до обращения к AI.
+- [x] Повторить тест: PASS. Просмотреть текст DOCX и значения XLSX, убедиться в синтетической маркировке.
+- [x] Инициализировать Git в текущей папке, если он по-прежнему отсутствует; добавлять только файлы задачи, не существующие пользовательские материалы. Commit: `feat: add synthetic financing case`.
 
 ### Task 2: Фактический запуск AI, проверка и подтверждение — 45 минут
 
@@ -64,11 +64,11 @@
 
 **Interfaces:** Consumes Task 1 schema. Produces `prepare_input(source_dir: Path) -> str`, `evaluate(predicted: dict, gold: dict) -> dict`, `validate_confirmed(data: dict) -> list[str]`. Confirmed JSON содержит `budget`, `equity`, `rate`, `years`, `cfads`, `stress_factor`, `dscr_floor`, `unit`, `resolutions`; числовые значения — из дизайна, unit=`million_rub`. `resolutions` явно фиксирует оба исходных бюджета, выбранные 100 млн и добавленные 40 млн equity как решение автора синтетического кейса.
 
-- [ ] Написать тесты: `test_input_preserves_locators` проверяет адрес каждой ячейки/абзаца; `test_missing_equity_blocks` проверяет непустые ошибки при null; `test_unresolved_budget_blocks` проверяет ошибку без разрешения conflict; `test_units_and_periods_matter` не засчитывает 110000 тыс. как 110000 млн или CFADS другого года; `test_missing_prediction_counts_wrong` оставляет отсутствующее поле в знаменателе.
-- [ ] Выполнить `python -m unittest tests.test_extraction -v`: ожидается ошибка импорта.
-- [ ] Реализовать функции. Метрики: верные поля / все ожидаемые поля; верные пары поле–источник / все ожидаемые пары; отдельно найденные/пропущенные/ложные проблемы. Числовая погрешность после нормализации: 1e-6 млн. Известный конфликт засчитывается только при сохранении обеих версий. Подготовить промпт без эталона, запрещающий угадывать пропуски.
-- [ ] Повторить тесты: PASS. Выполнить один фактический запуск доступной модели на подготовленных документах; сохранить сырой ответ, дату, название модели и способ запуска. Не создавать фиктивный ответ. Если API недоступен, использовать ручной запуск; если и он невозможен, записать «не выполнено» и продолжить как расчётный пример.
-- [ ] Оценить неизменённый ответ, записать ошибки и ограничения; отдельно подготовить confirmed JSON с пояснениями автора. Commit: `feat: record extraction experiment and confirmed inputs`.
+- [x] Написать тесты: `test_input_preserves_locators` проверяет адрес каждой ячейки/абзаца; `test_missing_equity_blocks` проверяет непустые ошибки при null; `test_unresolved_budget_blocks` проверяет ошибку без разрешения conflict; `test_units_and_periods_matter` не засчитывает 110000 тыс. как 110000 млн или CFADS другого года; `test_missing_prediction_counts_wrong` оставляет отсутствующее поле в знаменателе.
+- [x] Выполнить `python -m unittest tests.test_extraction -v`: ожидается ошибка импорта.
+- [x] Реализовать функции. Метрики: верные поля / все ожидаемые поля; верные пары поле–источник / все ожидаемые пары; отдельно найденные/пропущенные/ложные проблемы. Числовая погрешность после нормализации: 1e-6 млн. Известный конфликт засчитывается только при сохранении обеих версий. Подготовить промпт без эталона, запрещающий угадывать пропуски.
+- [x] Повторить тесты: PASS. Выполнить один фактический запуск доступной модели на подготовленных документах; сохранить сырой ответ, дату, название модели и способ запуска. Не создавать фиктивный ответ. Если API недоступен, использовать ручной запуск; если и он невозможен, записать «не выполнено» и продолжить как расчётный пример.
+- [x] Оценить неизменённый ответ, записать ошибки и ограничения; отдельно подготовить confirmed JSON с пояснениями автора. Commit: `feat: record extraction experiment and confirmed inputs`.
 
 ### Task 3: Прозрачный расчёт — 40 минут
 
@@ -76,11 +76,11 @@
 
 **Interfaces:** Consumes validated confirmed JSON. Produces `calculate(data: dict) -> dict` с ключами `need`, `capacity_base`, `capacity_stress`, `proposed_amount`, `funding_gap`, `base_schedule`, `stress_schedule`. Строка графика: `year`, `opening_debt`, `principal`, `interest`, `debt_service`, `cfads`, `dscr`, `closing_debt`. DSCR при нулевом debt_service — null, не Infinity.
 
-- [ ] Написать тесты `test_known_case`: need=60, base capacity≈57.14285714, stress capacity≈45.71428571, proposed≈45.71428571, gap≈14.28571429 (погрешность 1e-6); `test_zero_rate`: ставка 0 даёт stress capacity=80; proposed=60 из-за ограничения потребностью; `test_nonpositive_cfads`: при CFADS первого года 0 или -1 capacity=0; `test_invalid_terms`: отрицательная ставка, years=0 и несовпадающая длина CFADS дают ValueError; `test_schedule_conserves_principal`: сумма principal равна долгу, closing_debt последнего года≈0, минимум стрессового DSCR≈1.2.
-- [ ] Выполнить `python -m unittest tests.test_finance -v`: ожидается ошибка импорта.
-- [ ] Реализовать `calculate`. Для положительного CFADS предел в году t: CFADS[t] / (dscr_floor × (1/years + rate × (1 − t/years))), t начинается с 0. Предел сценария — минимум за годы. При неположительном CFADS предел 0. Proposed=min(max(budget−equity,0), capacity_base, capacity_stress); gap=need−proposed. Проценты на остаток начала года; равное погашение основного долга. При equity>budget need=0.
-- [ ] Повторить тесты: PASS. Сверить первый стрессовый год вручную: CFADS=19.2, обслуживание долга=16, DSCR=1.2 при proposed≈45.71428571.
-- [ ] Commit: `feat: calculate transparent debt capacity`.
+- [x] Написать тесты `test_known_case`: need=60, base capacity≈57.14285714, stress capacity≈45.71428571, proposed≈45.71428571, gap≈14.28571429 (погрешность 1e-6); `test_zero_rate`: ставка 0 даёт stress capacity=80; proposed=60 из-за ограничения потребностью; `test_nonpositive_cfads`: при CFADS первого года 0 или -1 capacity=0; `test_invalid_terms`: отрицательная ставка, years=0 и несовпадающая длина CFADS дают ValueError; `test_schedule_conserves_principal`: сумма principal равна долгу, closing_debt последнего года≈0, минимум стрессового DSCR≈1.2.
+- [x] Выполнить `python -m unittest tests.test_finance -v`: ожидается ошибка импорта.
+- [x] Реализовать `calculate`. Для положительного CFADS предел в году t: CFADS[t] / (dscr_floor × (1/years + rate × (1 − t/years))), t начинается с 0. Предел сценария — минимум за годы. При неположительном CFADS предел 0. Proposed=min(max(budget−equity,0), capacity_base, capacity_stress); gap=need−proposed. Проценты на остаток начала года; равное погашение основного долга. При equity>budget need=0.
+- [x] Повторить тесты: PASS. Сверить первый стрессовый год вручную: CFADS=19.2, обслуживание долга=16, DSCR=1.2 при proposed≈45.71428571.
+- [x] Commit: `feat: calculate transparent debt capacity`.
 
 ### Task 4: Один комплект для просмотра и воспроизведения — 40 минут
 
@@ -88,12 +88,12 @@
 
 **Interfaces:** Consumes Task 2 validation and Task 3 result. Produces `write_outputs(data: dict, result: dict, destination: Path) -> None`; CLI `python scripts/run_case.py --input case/confirmed.json --output output`. При невалидных данных CLI завершается ненулевым кодом до записи новых результатов.
 
-- [ ] Написать тесты `test_report_matches_calculation`: JSON и Markdown содержат одну сумму и дефицит, Excel Input хранит те же параметры, Output и графики используют формулы; `test_invalid_input_does_not_write_outputs`: нет новых файлов при пропуске equity; `test_zero_debt_has_no_division_error`: Excel защищает деление при нулевом долге. Проверить отсутствие утверждения «проект полностью профинансирован» при gap>0.
-- [ ] Выполнить `python -m unittest tests.test_report -v`: ожидается ошибка импорта.
-- [ ] Реализовать экспорт и CLI. Листы Excel: Input, Base, Stress, Output; формулы повторяют расчёт Python и ссылаются на Input. Включить пересчёт при открытии. В research.md разделить протокол, фактические наблюдения, ошибки и ограничения; при отсутствии AI-запуска явно написать это. Не включать выдуманные результаты.
-- [ ] Написать README: задача, синтетическая маркировка, короткий маршрут просмотра с относительными ссылками, схема Mermaid, запуск, результаты, ограничения и отличие демонстрации от полного MVP. Указать, что скоринг и полная отчётность не реализованы.
-- [ ] Выполнить `python -m unittest discover -s tests -v` и команду CLI: все тесты PASS, файлы созданы. Открыть Excel в доступном табличном движке, пересчитать и сравнить Output с Python в пределах 1e-6. Если движка нет, не утверждать проверку вычисленных Excel-формул: указать ограничение и оставить JSON источником проверенных чисел.
-- [ ] Commit: `docs: package reproducible financing case`.
+- [x] Написать тесты `test_report_matches_calculation`: JSON и Markdown содержат одну сумму и дефицит, Excel Input хранит те же параметры, Output и графики используют формулы; `test_invalid_input_does_not_write_outputs`: нет новых файлов при пропуске equity; `test_zero_debt_has_no_division_error`: Excel защищает деление при нулевом долге. Проверить отсутствие утверждения «проект полностью профинансирован» при gap>0.
+- [x] Выполнить `python -m unittest tests.test_report -v`: ожидается ошибка импорта.
+- [x] Реализовать экспорт и CLI. Листы Excel: Input, Base, Stress, Output; формулы повторяют расчёт Python и ссылаются на Input. Включить пересчёт при открытии. В research.md разделить протокол, фактические наблюдения, ошибки и ограничения; при отсутствии AI-запуска явно написать это. Не включать выдуманные результаты.
+- [x] Написать README: задача, синтетическая маркировка, короткий маршрут просмотра с относительными ссылками, схема Mermaid, запуск, результаты, ограничения и отличие демонстрации от полного MVP. Указать, что скоринг и полная отчётность не реализованы.
+- [x] Выполнить `python -m unittest discover -s tests -v` и команду CLI: все тесты PASS, файлы созданы. Открыть Excel в доступном табличном движке, пересчитать и сравнить Output с Python в пределах 1e-6. Если движка нет, не утверждать проверку вычисленных Excel-формул: указать ограничение и оставить JSON источником проверенных чисел.
+- [x] Commit: `docs: package reproducible financing case`.
 
 ## Резерв: 30 минут и публикация
 
@@ -103,4 +103,4 @@
 
 ## Self-Review
 
-Покрыты все требования предложенного дизайна. Пять рисков Review Focus закреплены за проверками. Интерфейсы evaluate/validate_confirmed/calculate/write_outputs согласованы. Четыре задачи и резерв укладываются в 180 минут; при задержке исключать оформление и API-автоматизацию, сохранять расчёт, проверку и честность выводов. Этот план не является разрешением начать реализацию до пользовательской проверки.
+Покрыты все требования предложенного дизайна. Пять рисков Review Focus закреплены за проверками. Интерфейсы evaluate/validate_confirmed/calculate/write_outputs согласованы. Четыре задачи и резерв укладываются в 180 минут; при задержке исключать оформление и API-автоматизацию, сохранять расчёт, проверку и честность выводов. Дизайн и выполнение утверждены пользователем 15 ноября 2026 года. Дополнительно выполнены интеграционные проверки Excel и проверка неизменности сохранённого ответа AI.

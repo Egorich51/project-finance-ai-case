@@ -43,7 +43,8 @@ def _normalized(item):
 
 
 def _same_value(predicted, expected):
-    if not isinstance(predicted, dict) or predicted.get('period') != expected['period']:
+    if (not isinstance(predicted, dict) or type(predicted.get('period')) is not type(expected['period'])
+            or predicted.get('period') != expected['period']):
         return False
     p_value, p_unit = _normalized(predicted)
     e_value, e_unit = _normalized(expected)
@@ -65,7 +66,8 @@ def _same_value(predicted, expected):
 def _sources(item):
     if not isinstance(item, dict) or not isinstance(item.get('sources'), list):
         return set()
-    return {(s.get('file'), s.get('locator')) for s in item['sources'] if isinstance(s, dict)}
+    return {(s['file'], s['locator']) for s in item['sources']
+            if isinstance(s, dict) and isinstance(s.get('file'), str) and isinstance(s.get('locator'), str)}
 
 
 def evaluate(predicted: dict, gold: dict) -> dict:
@@ -84,7 +86,11 @@ def evaluate(predicted: dict, gold: dict) -> dict:
         source_total += len(expected_sources)
         source_correct += len(expected_sources & _sources(item))
     expected_issues = {(i['field'], i['kind']) for i in gold['issues']}
-    actual_issues = {(i.get('field'), i.get('kind')) for i in predicted.get('issues', []) if isinstance(i, dict)}
+    issues = predicted.get('issues', [])
+    if not isinstance(issues, list):
+        issues = []
+    actual_issues = {(i['field'], i['kind']) for i in issues
+                     if isinstance(i, dict) and isinstance(i.get('field'), str) and isinstance(i.get('kind'), str)}
     total = len(gold['fields'])
     return {
         'fields': {'correct': correct, 'total': total, 'accuracy': correct / total},

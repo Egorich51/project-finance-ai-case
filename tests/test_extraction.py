@@ -82,6 +82,19 @@ class ExtractionTests(unittest.TestCase):
                 data[key] = value
                 self.assertTrue(validate_confirmed(data))
 
+    def test_malformed_model_collections_are_scored_without_crashing(self):
+        predicted = copy.deepcopy(self.gold)
+        predicted['issues'] = None
+        predicted['fields']['rate']['sources'] = [{'file': [], 'locator': {}}]
+        result = evaluate(predicted, self.gold)
+        self.assertEqual(result['issues']['false_negative'], 2)
+        self.assertEqual(result['sources']['correct'], 11)
+
+    def test_boolean_period_does_not_count_as_year_one(self):
+        predicted = copy.deepcopy(self.gold)
+        predicted['fields']['cfads_1']['period'] = True
+        self.assertEqual(evaluate(predicted, self.gold)['fields']['correct'], 10)
+
 
 if __name__ == '__main__':
     unittest.main()
