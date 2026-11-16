@@ -1,0 +1,1205 @@
+{
+  "01_terms": {
+    "project_id": "01",
+    "folder": "01_Гофроупаковка",
+    "fields": {
+      "budget_total": {
+        "value": 107.6,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L54",
+          "MD:L304",
+          "MD:L315"
+        ],
+        "label": "Полная потребность с НДС, оборотным бюджетом и резервом",
+        "tolerance": 0.005001
+      },
+      "capex_net": {
+        "value": 80.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L293"
+        ],
+        "label": "Капвложения без НДС",
+        "tolerance": 0.005001
+      },
+      "capex_vat": {
+        "value": 17.6,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L293"
+        ],
+        "label": "НДС капитальных вложений",
+        "tolerance": 0.005001
+      },
+      "capex_gross": {
+        "value": 97.6,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L293"
+        ],
+        "label": "Капвложения с НДС",
+        "tolerance": 0.005001
+      },
+      "working_capital": {
+        "value": 10.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L302"
+        ],
+        "label": "Бюджет оборотных средств",
+        "tolerance": 0.005001
+      },
+      "liquidity_reserve": {
+        "value": 0.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L303"
+        ],
+        "label": "Отдельный стартовый резерв",
+        "tolerance": 0.005001
+      },
+      "new_loan": {
+        "value": 65.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L55",
+          "MD:L312",
+          "MD:L471"
+        ],
+        "label": "Только новый банковский кредит",
+        "tolerance": 0.005001
+      },
+      "equity_total": {
+        "value": 42.6,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L56"
+        ],
+        "label": "Общее собственное участие, включая деньги компании",
+        "tolerance": 0.005001
+      },
+      "owner_contribution": {
+        "value": 35.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L313"
+        ],
+        "label": "Отдельно взнос участников",
+        "tolerance": 0.005001
+      },
+      "company_cash_contribution": {
+        "value": 7.6,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L314"
+        ],
+        "label": "Отдельно денежное участие действующей компании",
+        "tolerance": 0.005001
+      },
+      "annual_rate": {
+        "value": 0.21,
+        "unit": "fraction",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L474",
+          "MD:L375",
+          "MD:L57"
+        ],
+        "label": "Ставка НОВОГО кредита",
+        "tolerance": 1e-08
+      },
+      "tenor_months": {
+        "value": 60,
+        "unit": "month",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L473",
+          "MD:L57"
+        ],
+        "label": "Срок нового кредита в месяцах",
+        "tolerance": 1e-08
+      },
+      "grace_months": {
+        "value": 12,
+        "unit": "month",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L475"
+        ],
+        "label": "Отсрочка основного долга в месяцах",
+        "tolerance": 1e-08
+      },
+      "draw_2027_01": {
+        "value": 30.0,
+        "unit": "million_rub",
+        "period": "2027-01",
+        "allowed_sources": [
+          "MD:L483"
+        ],
+        "label": "Транш за 2027-01",
+        "tolerance": 0.005001
+      },
+      "draw_2027_02": {
+        "value": 25.0,
+        "unit": "million_rub",
+        "period": "2027-02",
+        "allowed_sources": [
+          "MD:L483"
+        ],
+        "label": "Транш за 2027-02",
+        "tolerance": 0.005001
+      },
+      "draw_2027_03": {
+        "value": 10.0,
+        "unit": "million_rub",
+        "period": "2027-03",
+        "allowed_sources": [
+          "MD:L483"
+        ],
+        "label": "Транш за 2027-03",
+        "tolerance": 0.005001
+      }
+    },
+    "issues": []
+  },
+  "01_financials": {
+    "project_id": "01",
+    "folder": "01_Гофроупаковка",
+    "fields": {
+      "revenue_2025": {
+        "value": 180.0,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:ОФР!F9"
+        ],
+        "label": "Выручка всей компании за 2025",
+        "tolerance": 1e-06
+      },
+      "net_profit_2025": {
+        "value": 18.375,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:ОФР!F26"
+        ],
+        "label": "Чистая прибыль всей компании за 2025",
+        "tolerance": 1e-06
+      },
+      "assets_2025": {
+        "value": 86.61,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:Баланс!F30"
+        ],
+        "label": "Активы компании на 31.12.2025",
+        "tolerance": 1e-06
+      },
+      "cash_2025": {
+        "value": 21.01,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:Баланс!F27"
+        ],
+        "label": "Деньги компании на 31.12.2025",
+        "tolerance": 1e-06
+      },
+      "debt_long_2025": {
+        "value": 7.0,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:Баланс!F41"
+        ],
+        "label": "Долгосрочный долг компании на 31.12.2025",
+        "tolerance": 1e-06
+      },
+      "debt_short_2025": {
+        "value": 2.5,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:Баланс!F47"
+        ],
+        "label": "Краткосрочный долг компании на 31.12.2025",
+        "tolerance": 1e-06
+      },
+      "cfo_2025": {
+        "value": 15.27,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:ОДДС!F22"
+        ],
+        "label": "Операционный денежный поток компании за 2025",
+        "tolerance": 1e-06
+      },
+      "ebitda_2027": {
+        "value": 20.1,
+        "unit": "million_rub",
+        "period": 2027,
+        "allowed_sources": [
+          "MD:L402"
+        ],
+        "label": "EBITDA периметра проекта за 2027",
+        "tolerance": 0.005001
+      },
+      "ebitda_2028": {
+        "value": 40.52,
+        "unit": "million_rub",
+        "period": 2028,
+        "allowed_sources": [
+          "MD:L402"
+        ],
+        "label": "EBITDA периметра проекта за 2028",
+        "tolerance": 0.005001
+      },
+      "ebitda_2029": {
+        "value": 44.33,
+        "unit": "million_rub",
+        "period": 2029,
+        "allowed_sources": [
+          "MD:L402"
+        ],
+        "label": "EBITDA периметра проекта за 2029",
+        "tolerance": 0.005001
+      },
+      "ebitda_2030": {
+        "value": 43.74,
+        "unit": "million_rub",
+        "period": 2030,
+        "allowed_sources": [
+          "MD:L402"
+        ],
+        "label": "EBITDA периметра проекта за 2030",
+        "tolerance": 0.005001
+      },
+      "ebitda_2031": {
+        "value": 43.02,
+        "unit": "million_rub",
+        "period": 2031,
+        "allowed_sources": [
+          "MD:L402"
+        ],
+        "label": "EBITDA периметра проекта за 2031",
+        "tolerance": 0.005001
+      },
+      "cfads_2027": {
+        "value": 13.46,
+        "unit": "million_rub",
+        "period": 2027,
+        "allowed_sources": [
+          "MD:L416"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2027",
+        "tolerance": 0.005001
+      },
+      "cfads_2028": {
+        "value": 33.66,
+        "unit": "million_rub",
+        "period": 2028,
+        "allowed_sources": [
+          "MD:L416"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2028",
+        "tolerance": 0.005001
+      },
+      "cfads_2029": {
+        "value": 35.28,
+        "unit": "million_rub",
+        "period": 2029,
+        "allowed_sources": [
+          "MD:L416"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2029",
+        "tolerance": 0.005001
+      },
+      "cfads_2030": {
+        "value": 34.36,
+        "unit": "million_rub",
+        "period": 2030,
+        "allowed_sources": [
+          "MD:L416"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2030",
+        "tolerance": 0.005001
+      },
+      "cfads_2031": {
+        "value": 32.96,
+        "unit": "million_rub",
+        "period": 2031,
+        "allowed_sources": [
+          "MD:L416"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2031",
+        "tolerance": 0.005001
+      },
+      "dscr_2027": {
+        "value": 1.05,
+        "unit": "ratio",
+        "period": 2027,
+        "allowed_sources": [
+          "MD:L419"
+        ],
+        "label": "DSCR периметра проекта за 2027",
+        "tolerance": 0.005001
+      },
+      "dscr_2028": {
+        "value": 1.19,
+        "unit": "ratio",
+        "period": 2028,
+        "allowed_sources": [
+          "MD:L419"
+        ],
+        "label": "DSCR периметра проекта за 2028",
+        "tolerance": 0.005001
+      },
+      "dscr_2029": {
+        "value": 1.42,
+        "unit": "ratio",
+        "period": 2029,
+        "allowed_sources": [
+          "MD:L419"
+        ],
+        "label": "DSCR периметра проекта за 2029",
+        "tolerance": 0.005001
+      },
+      "dscr_2030": {
+        "value": 1.6,
+        "unit": "ratio",
+        "period": 2030,
+        "allowed_sources": [
+          "MD:L419"
+        ],
+        "label": "DSCR периметра проекта за 2030",
+        "tolerance": 0.005001
+      },
+      "dscr_2031": {
+        "value": 1.82,
+        "unit": "ratio",
+        "period": 2031,
+        "allowed_sources": [
+          "MD:L419"
+        ],
+        "label": "DSCR периметра проекта за 2031",
+        "tolerance": 0.005001
+      }
+    },
+    "issues": []
+  },
+  "02_terms": {
+    "project_id": "02",
+    "folder": "02_Модернизация_металлообработки",
+    "fields": {
+      "budget_total": {
+        "value": 65.9,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L54",
+          "MD:L300",
+          "MD:L311"
+        ],
+        "label": "Полная потребность с НДС, оборотным бюджетом и резервом",
+        "tolerance": 0.005001
+      },
+      "capex_net": {
+        "value": 45.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L289"
+        ],
+        "label": "Капвложения без НДС",
+        "tolerance": 0.005001
+      },
+      "capex_vat": {
+        "value": 9.9,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L289"
+        ],
+        "label": "НДС капитальных вложений",
+        "tolerance": 0.005001
+      },
+      "capex_gross": {
+        "value": 54.9,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L289"
+        ],
+        "label": "Капвложения с НДС",
+        "tolerance": 0.005001
+      },
+      "working_capital": {
+        "value": 6.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L298"
+        ],
+        "label": "Бюджет оборотных средств",
+        "tolerance": 0.005001
+      },
+      "liquidity_reserve": {
+        "value": 5.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L299"
+        ],
+        "label": "Отдельный стартовый резерв",
+        "tolerance": 0.005001
+      },
+      "new_loan": {
+        "value": 36.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L55",
+          "MD:L308",
+          "MD:L467"
+        ],
+        "label": "Только новый банковский кредит",
+        "tolerance": 0.005001
+      },
+      "equity_total": {
+        "value": 29.9,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L56"
+        ],
+        "label": "Общее собственное участие, включая деньги компании",
+        "tolerance": 0.005001
+      },
+      "owner_contribution": {
+        "value": 0.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L309"
+        ],
+        "label": "Отдельно взнос участников",
+        "tolerance": 0.005001
+      },
+      "company_cash_contribution": {
+        "value": 29.9,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L310"
+        ],
+        "label": "Отдельно денежное участие действующей компании",
+        "tolerance": 0.005001
+      },
+      "annual_rate": {
+        "value": 0.21,
+        "unit": "fraction",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L470",
+          "MD:L371",
+          "MD:L57"
+        ],
+        "label": "Ставка НОВОГО кредита",
+        "tolerance": 1e-08
+      },
+      "tenor_months": {
+        "value": 60,
+        "unit": "month",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L469",
+          "MD:L57"
+        ],
+        "label": "Срок нового кредита в месяцах",
+        "tolerance": 1e-08
+      },
+      "grace_months": {
+        "value": 12,
+        "unit": "month",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L471"
+        ],
+        "label": "Отсрочка основного долга в месяцах",
+        "tolerance": 1e-08
+      },
+      "draw_2027_01": {
+        "value": 12.0,
+        "unit": "million_rub",
+        "period": "2027-01",
+        "allowed_sources": [
+          "MD:L479"
+        ],
+        "label": "Транш за 2027-01",
+        "tolerance": 0.005001
+      },
+      "draw_2027_02": {
+        "value": 12.0,
+        "unit": "million_rub",
+        "period": "2027-02",
+        "allowed_sources": [
+          "MD:L479"
+        ],
+        "label": "Транш за 2027-02",
+        "tolerance": 0.005001
+      },
+      "draw_2027_03": {
+        "value": 12.0,
+        "unit": "million_rub",
+        "period": "2027-03",
+        "allowed_sources": [
+          "MD:L479"
+        ],
+        "label": "Транш за 2027-03",
+        "tolerance": 0.005001
+      }
+    },
+    "issues": []
+  },
+  "02_financials": {
+    "project_id": "02",
+    "folder": "02_Модернизация_металлообработки",
+    "fields": {
+      "revenue_2025": {
+        "value": 225.0,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:ОФР!F9"
+        ],
+        "label": "Выручка всей компании за 2025",
+        "tolerance": 1e-06
+      },
+      "net_profit_2025": {
+        "value": 29.25,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:ОФР!F26"
+        ],
+        "label": "Чистая прибыль всей компании за 2025",
+        "tolerance": 1e-06
+      },
+      "assets_2025": {
+        "value": 145.61,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:Баланс!F30"
+        ],
+        "label": "Активы компании на 31.12.2025",
+        "tolerance": 1e-06
+      },
+      "cash_2025": {
+        "value": 47.51,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:Баланс!F27"
+        ],
+        "label": "Деньги компании на 31.12.2025",
+        "tolerance": 1e-06
+      },
+      "debt_long_2025": {
+        "value": 0.0,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:Баланс!F41"
+        ],
+        "label": "Долгосрочный долг компании на 31.12.2025",
+        "tolerance": 1e-06
+      },
+      "debt_short_2025": {
+        "value": 0.0,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:Баланс!F47"
+        ],
+        "label": "Краткосрочный долг компании на 31.12.2025",
+        "tolerance": 1e-06
+      },
+      "cfo_2025": {
+        "value": 32.9,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:ОДДС!F22"
+        ],
+        "label": "Операционный денежный поток компании за 2025",
+        "tolerance": 1e-06
+      },
+      "ebitda_2027": {
+        "value": 38.32,
+        "unit": "million_rub",
+        "period": 2027,
+        "allowed_sources": [
+          "MD:L398"
+        ],
+        "label": "EBITDA периметра проекта за 2027",
+        "tolerance": 0.005001
+      },
+      "ebitda_2028": {
+        "value": 55.83,
+        "unit": "million_rub",
+        "period": 2028,
+        "allowed_sources": [
+          "MD:L398"
+        ],
+        "label": "EBITDA периметра проекта за 2028",
+        "tolerance": 0.005001
+      },
+      "ebitda_2029": {
+        "value": 62.42,
+        "unit": "million_rub",
+        "period": 2029,
+        "allowed_sources": [
+          "MD:L398"
+        ],
+        "label": "EBITDA периметра проекта за 2029",
+        "tolerance": 0.005001
+      },
+      "ebitda_2030": {
+        "value": 63.25,
+        "unit": "million_rub",
+        "period": 2030,
+        "allowed_sources": [
+          "MD:L398"
+        ],
+        "label": "EBITDA периметра проекта за 2030",
+        "tolerance": 0.005001
+      },
+      "ebitda_2031": {
+        "value": 64.01,
+        "unit": "million_rub",
+        "period": 2031,
+        "allowed_sources": [
+          "MD:L398"
+        ],
+        "label": "EBITDA периметра проекта за 2031",
+        "tolerance": 0.005001
+      },
+      "cfads_2027": {
+        "value": 24.0,
+        "unit": "million_rub",
+        "period": 2027,
+        "allowed_sources": [
+          "MD:L412"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2027",
+        "tolerance": 0.005001
+      },
+      "cfads_2028": {
+        "value": 42.96,
+        "unit": "million_rub",
+        "period": 2028,
+        "allowed_sources": [
+          "MD:L412"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2028",
+        "tolerance": 0.005001
+      },
+      "cfads_2029": {
+        "value": 45.51,
+        "unit": "million_rub",
+        "period": 2029,
+        "allowed_sources": [
+          "MD:L412"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2029",
+        "tolerance": 0.005001
+      },
+      "cfads_2030": {
+        "value": 46.45,
+        "unit": "million_rub",
+        "period": 2030,
+        "allowed_sources": [
+          "MD:L412"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2030",
+        "tolerance": 0.005001
+      },
+      "cfads_2031": {
+        "value": 46.52,
+        "unit": "million_rub",
+        "period": 2031,
+        "allowed_sources": [
+          "MD:L412"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2031",
+        "tolerance": 0.005001
+      },
+      "dscr_2027": {
+        "value": 3.46,
+        "unit": "ratio",
+        "period": 2027,
+        "allowed_sources": [
+          "MD:L415"
+        ],
+        "label": "DSCR периметра проекта за 2027",
+        "tolerance": 0.005001
+      },
+      "dscr_2028": {
+        "value": 2.74,
+        "unit": "ratio",
+        "period": 2028,
+        "allowed_sources": [
+          "MD:L415"
+        ],
+        "label": "DSCR периметра проекта за 2028",
+        "tolerance": 0.005001
+      },
+      "dscr_2029": {
+        "value": 3.3,
+        "unit": "ratio",
+        "period": 2029,
+        "allowed_sources": [
+          "MD:L415"
+        ],
+        "label": "DSCR периметра проекта за 2029",
+        "tolerance": 0.005001
+      },
+      "dscr_2030": {
+        "value": 3.9,
+        "unit": "ratio",
+        "period": 2030,
+        "allowed_sources": [
+          "MD:L415"
+        ],
+        "label": "DSCR периметра проекта за 2030",
+        "tolerance": 0.005001
+      },
+      "dscr_2031": {
+        "value": 4.64,
+        "unit": "ratio",
+        "period": 2031,
+        "allowed_sources": [
+          "MD:L415"
+        ],
+        "label": "DSCR периметра проекта за 2031",
+        "tolerance": 0.005001
+      }
+    },
+    "issues": []
+  },
+  "03_terms": {
+    "project_id": "03",
+    "folder": "03_Сушка_пиломатериалов",
+    "fields": {
+      "budget_total": {
+        "value": 107.4,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L54",
+          "MD:L304",
+          "MD:L315"
+        ],
+        "label": "Полная потребность с НДС, оборотным бюджетом и резервом",
+        "tolerance": 0.005001
+      },
+      "capex_net": {
+        "value": 70.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L293"
+        ],
+        "label": "Капвложения без НДС",
+        "tolerance": 0.005001
+      },
+      "capex_vat": {
+        "value": 15.4,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L293"
+        ],
+        "label": "НДС капитальных вложений",
+        "tolerance": 0.005001
+      },
+      "capex_gross": {
+        "value": 85.4,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L293"
+        ],
+        "label": "Капвложения с НДС",
+        "tolerance": 0.005001
+      },
+      "working_capital": {
+        "value": 12.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L302"
+        ],
+        "label": "Бюджет оборотных средств",
+        "tolerance": 0.005001
+      },
+      "liquidity_reserve": {
+        "value": 10.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L303"
+        ],
+        "label": "Отдельный стартовый резерв",
+        "tolerance": 0.005001
+      },
+      "new_loan": {
+        "value": 55.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L55",
+          "MD:L312",
+          "MD:L471"
+        ],
+        "label": "Только новый банковский кредит",
+        "tolerance": 0.005001
+      },
+      "equity_total": {
+        "value": 52.4,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L56"
+        ],
+        "label": "Общее собственное участие, включая деньги компании",
+        "tolerance": 0.005001
+      },
+      "owner_contribution": {
+        "value": 35.0,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L313"
+        ],
+        "label": "Отдельно взнос участников",
+        "tolerance": 0.005001
+      },
+      "company_cash_contribution": {
+        "value": 17.4,
+        "unit": "million_rub",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L314"
+        ],
+        "label": "Отдельно денежное участие действующей компании",
+        "tolerance": 0.005001
+      },
+      "annual_rate": {
+        "value": 0.22,
+        "unit": "fraction",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L474",
+          "MD:L375",
+          "MD:L57"
+        ],
+        "label": "Ставка НОВОГО кредита",
+        "tolerance": 1e-08
+      },
+      "tenor_months": {
+        "value": 60,
+        "unit": "month",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L473",
+          "MD:L57"
+        ],
+        "label": "Срок нового кредита в месяцах",
+        "tolerance": 1e-08
+      },
+      "grace_months": {
+        "value": 18,
+        "unit": "month",
+        "period": "project",
+        "allowed_sources": [
+          "MD:L475"
+        ],
+        "label": "Отсрочка основного долга в месяцах",
+        "tolerance": 1e-08
+      },
+      "draw_2027_01": {
+        "value": 20.0,
+        "unit": "million_rub",
+        "period": "2027-01",
+        "allowed_sources": [
+          "MD:L483"
+        ],
+        "label": "Транш за 2027-01",
+        "tolerance": 0.005001
+      },
+      "draw_2027_04": {
+        "value": 20.0,
+        "unit": "million_rub",
+        "period": "2027-04",
+        "allowed_sources": [
+          "MD:L483"
+        ],
+        "label": "Транш за 2027-04",
+        "tolerance": 0.005001
+      },
+      "draw_2027_07": {
+        "value": 15.0,
+        "unit": "million_rub",
+        "period": "2027-07",
+        "allowed_sources": [
+          "MD:L483"
+        ],
+        "label": "Транш за 2027-07",
+        "tolerance": 0.005001
+      }
+    },
+    "issues": []
+  },
+  "03_financials": {
+    "project_id": "03",
+    "folder": "03_Сушка_пиломатериалов",
+    "fields": {
+      "revenue_2025": {
+        "value": 190.0,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:ОФР!F9"
+        ],
+        "label": "Выручка всей компании за 2025",
+        "tolerance": 1e-06
+      },
+      "net_profit_2025": {
+        "value": 19.95,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:ОФР!F26"
+        ],
+        "label": "Чистая прибыль всей компании за 2025",
+        "tolerance": 1e-06
+      },
+      "assets_2025": {
+        "value": 106.98,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:Баланс!F30"
+        ],
+        "label": "Активы компании на 31.12.2025",
+        "tolerance": 1e-06
+      },
+      "cash_2025": {
+        "value": 27.68,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:Баланс!F27"
+        ],
+        "label": "Деньги компании на 31.12.2025",
+        "tolerance": 1e-06
+      },
+      "debt_long_2025": {
+        "value": 4.0,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:Баланс!F41"
+        ],
+        "label": "Долгосрочный долг компании на 31.12.2025",
+        "tolerance": 1e-06
+      },
+      "debt_short_2025": {
+        "value": 2.0,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:Баланс!F47"
+        ],
+        "label": "Краткосрочный долг компании на 31.12.2025",
+        "tolerance": 1e-06
+      },
+      "cfo_2025": {
+        "value": 23.27,
+        "unit": "million_rub",
+        "period": 2025,
+        "allowed_sources": [
+          "XLSX:ОДДС!F22"
+        ],
+        "label": "Операционный денежный поток компании за 2025",
+        "tolerance": 1e-06
+      },
+      "ebitda_2027": {
+        "value": 4.17,
+        "unit": "million_rub",
+        "period": 2027,
+        "allowed_sources": [
+          "MD:L402"
+        ],
+        "label": "EBITDA периметра проекта за 2027",
+        "tolerance": 0.005001
+      },
+      "ebitda_2028": {
+        "value": 38.95,
+        "unit": "million_rub",
+        "period": 2028,
+        "allowed_sources": [
+          "MD:L402"
+        ],
+        "label": "EBITDA периметра проекта за 2028",
+        "tolerance": 0.005001
+      },
+      "ebitda_2029": {
+        "value": 47.97,
+        "unit": "million_rub",
+        "period": 2029,
+        "allowed_sources": [
+          "MD:L402"
+        ],
+        "label": "EBITDA периметра проекта за 2029",
+        "tolerance": 0.005001
+      },
+      "ebitda_2030": {
+        "value": 53.66,
+        "unit": "million_rub",
+        "period": 2030,
+        "allowed_sources": [
+          "MD:L402"
+        ],
+        "label": "EBITDA периметра проекта за 2030",
+        "tolerance": 0.005001
+      },
+      "ebitda_2031": {
+        "value": 55.59,
+        "unit": "million_rub",
+        "period": 2031,
+        "allowed_sources": [
+          "MD:L402"
+        ],
+        "label": "EBITDA периметра проекта за 2031",
+        "tolerance": 0.005001
+      },
+      "cfads_2027": {
+        "value": -10.15,
+        "unit": "million_rub",
+        "period": 2027,
+        "allowed_sources": [
+          "MD:L416"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2027",
+        "tolerance": 0.005001
+      },
+      "cfads_2028": {
+        "value": 29.8,
+        "unit": "million_rub",
+        "period": 2028,
+        "allowed_sources": [
+          "MD:L416"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2028",
+        "tolerance": 0.005001
+      },
+      "cfads_2029": {
+        "value": 35.63,
+        "unit": "million_rub",
+        "period": 2029,
+        "allowed_sources": [
+          "MD:L416"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2029",
+        "tolerance": 0.005001
+      },
+      "cfads_2030": {
+        "value": 39.98,
+        "unit": "million_rub",
+        "period": 2030,
+        "allowed_sources": [
+          "MD:L416"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2030",
+        "tolerance": 0.005001
+      },
+      "cfads_2031": {
+        "value": 41.64,
+        "unit": "million_rub",
+        "period": 2031,
+        "allowed_sources": [
+          "MD:L416"
+        ],
+        "label": "Поток до обслуживания долга периметра проекта за 2031",
+        "tolerance": 0.005001
+      },
+      "dscr_2027": {
+        "value": -1.09,
+        "unit": "ratio",
+        "period": 2027,
+        "allowed_sources": [
+          "MD:L419"
+        ],
+        "label": "DSCR периметра проекта за 2027",
+        "tolerance": 0.005001
+      },
+      "dscr_2028": {
+        "value": 1.52,
+        "unit": "ratio",
+        "period": 2028,
+        "allowed_sources": [
+          "MD:L419"
+        ],
+        "label": "DSCR периметра проекта за 2028",
+        "tolerance": 0.005001
+      },
+      "dscr_2029": {
+        "value": 1.45,
+        "unit": "ratio",
+        "period": 2029,
+        "allowed_sources": [
+          "MD:L419"
+        ],
+        "label": "DSCR периметра проекта за 2029",
+        "tolerance": 0.005001
+      },
+      "dscr_2030": {
+        "value": 1.9,
+        "unit": "ratio",
+        "period": 2030,
+        "allowed_sources": [
+          "MD:L419"
+        ],
+        "label": "DSCR периметра проекта за 2030",
+        "tolerance": 0.005001
+      },
+      "dscr_2031": {
+        "value": 2.37,
+        "unit": "ratio",
+        "period": 2031,
+        "allowed_sources": [
+          "MD:L419"
+        ],
+        "label": "DSCR периметра проекта за 2031",
+        "tolerance": 0.005001
+      }
+    },
+    "issues": []
+  }
+}

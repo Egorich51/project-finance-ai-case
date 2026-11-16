@@ -9,6 +9,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
+def validate_token_budget(input_tokens: int, max_new_tokens: int, context_tokens: int) -> None:
+    if input_tokens < 1 or max_new_tokens < 1 or context_tokens < 1:
+        raise ValueError('Token budgets must be positive')
+    if input_tokens + max_new_tokens > context_tokens:
+        raise ValueError('Input exceeds the frozen token budget; no truncation allowed')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--model', required=True)
@@ -17,6 +24,8 @@ def main():
     parser.add_argument('--inputs', type=Path, required=True)
     parser.add_argument('--cache', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--max-new-tokens', type=int, default=2500)
+    parser.add_argument('--context-tokens', type=int, default=8192)
     args = parser.parse_args()
     os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
     os.environ['HF_HUB_DISABLE_IMPLICIT_TOKEN'] = '1'
@@ -33,7 +42,9 @@ def main():
         'gpu_total_memory_bytes': torch.cuda.get_device_properties(0).total_memory,
         'versions': {name: importlib.metadata.version(name) for name in ('torch', 'transformers', 'accelerate', 'bitsandbytes')},
         'quantization': '4-bit NF4, double quantization, FP16 compute',
-        'generation': {'do_sample': False, 'max_new_tokens': 2500, 'seed': 42},
+        'generation': {'do_sample': False, 'max_new_tokens': args.max_new_tokens, 'context_tokens': args.context_tokens, 'seed': 42},
+        'runner_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        'system_prompt': 'Извлекай финансовые сведения из предоставленных документов. Ответ — ровно один JSON по схеме пользователя, без Markdown.',
         'started_utc': datetime.now(timezone.utc).isoformat(),
     }
     (args.output / 'environment.json').write_text(json.dumps(environment, indent=2) + '\n')
@@ -58,18 +69,18 @@ def main():
             text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
             inputs = tokenizer([text], return_tensors='pt').to('cuda:0')
             input_tokens = inputs['input_ids'].shape[-1]
-            if input_tokens + 2500 > 8192:
-                raise ValueError('Input exceeds the frozen 8192-token budget; no truncation allowed')
+            validate_token_budget(input_tokens, args.max_new_tokens, args.context_tokens)
+            record['serialized_prompt_sha256'] = hashlib.sha256(text.encode()).hexdigest()
             torch.cuda.reset_peak_memory_stats()
             torch.cuda.synchronize()
             started = time.monotonic()
             with torch.inference_mode():
-                output = model.generate(**inputs, max_new_tokens=2500, do_sample=False, use_cache=True, pad_token_id=tokenizer.eos_token_id)
+                output = model.generate(**inputs, max_new_tokens=args.max_new_tokens, do_sample=False, use_cache=True, pad_token_id=tokenizer.eos_token_id)
             torch.cuda.synchronize()
             generated = output[0, input_tokens:]
             raw = tokenizer.decode(generated, skip_special_tokens=True)
             record.update(raw_text=raw, prompt_tokens=input_tokens, generated_tokens=len(generated),
-                          finish_reason='length' if len(generated) >= 2500 else 'stop',
+                          finish_reason='length' if len(generated) >= args.max_new_tokens else 'stop',
                           peak_gpu_memory_bytes=torch.cuda.max_memory_allocated())
         except Exception as error:
             record.update(raw_text='', error=type(error).__name__ + ': ' + str(error))
