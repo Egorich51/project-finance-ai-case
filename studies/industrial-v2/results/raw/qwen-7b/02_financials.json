@@ -1,0 +1,17 @@
+{
+  "case_id": "02_financials",
+  "business": "02",
+  "variant": "financials",
+  "input_sha256": "5ad349b3ea186dcf4a6a3da0878f866955ed14240274391cf62f96acec5df520",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "started_utc": "2026-11-16T06:45:42.024529+00:00",
+  "serialized_prompt_sha256": "5eb92dd185b5c0b456ca90a874f5b817e95261484cd45e18220643feeca1965f",
+  "raw_text": "{\"fields\":{\"revenue_2025\":{\"value\":225,\"unit\":\"million_rub\",\"period\":2025,\"sources\":[\"XLSX:ОФР!F9\"]},\"net_profit_2025\":{\"value\":29.25,\"unit\":\"million_rub\",\"period\":2025,\"sources\":[\"XLSX:ОФР!F26\"]},\"assets_2025\":{\"value\":145610,\"unit\":\"thousand_rub\",\"period\":2025,\"sources\":[\"XLSX:Баланс!F30\"]},\"cash_2025\":{\"value\":47510,\"unit\":\"thousand_rub\",\"period\":2025,\"sources\":[\"XLSX:Баланс!F27\"]},\"debt_long_2025\":{\"value\":null,\"unit\":\"million_rub\",\"period\":2025,\"sources\":[\"XLSX:Баланс!F41\"]},\"debt_short_2025\":{\"value\":null,\"unit\":\"million_rub\",\"period\":2025,\"sources\":[\"XLSX:Баланс!F47\"]},\"cfo_2025\":{\"value\":32900,\"unit\":\"thousand_rub\",\"period\":2025,\"sources\":[\"XLSX:ОДДС!F22\"]},\"ebitda_2027\":{\"value\":38.32,\"unit\":\"million_rub\",\"period\":2027,\"sources\":[\"MD:L398\"]},\"ebitda_2028\":{\"value\":55.83,\"unit\":\"million_rub\",\"period\":2028,\"sources\":[\"MD:L398\"]},\"ebitda_2029\":{\"value\":62.42,\"unit\":\"million_rub\",\"period\":2029,\"sources\":[\"MD:L398\"]},\"ebitda_2030\":{\"value\":63.25,\"unit\":\"million_rub\",\"period\":2030,\"sources\":[\"MD:L398\"]},\"ebitda_2031\":{\"value\":64.01,\"unit\":\"million_rub\",\"period\":2031,\"sources\":[\"MD:L398\"]},\"cfads_2027\":{\"value\":24,\"unit\":\"million_rub\",\"period\":2027,\"sources\":[\"MD:L412\"]},\"cfads_2028\":{\"value\":42.96,\"unit\":\"million_rub\",\"period\":2028,\"sources\":[\"MD:L412\"]},\"cfads_2029\":{\"value\":45.51,\"unit\":\"million_rub\",\"period\":2029,\"sources\":[\"MD:L412\"]},\"cfads_2030\":{\"value\":46.45,\"unit\":\"million_rub\",\"period\":2030,\"sources\":[\"MD:L412\"]},\"cfads_2031\":{\"value\":46.52,\"unit\":\"million_rub\",\"period\":2031,\"sources\":[\"MD:L412\"]},\"dscr_2027\":{\"value\":3.46,\"unit\":\"ratio\",\"period\":2027,\"sources\":[\"MD:L415\"]},\"dscr_2028\":{\"value\":2.74,\"unit\":\"ratio\",\"period\":2028,\"sources\":[\"MD:L415\"]},\"dscr_2029\":{\"value\":3.3,\"unit\":\"ratio\",\"period\":2029,\"sources\":[\"MD:L415\"]},\"dscr_2030\":{\"value\":3.9,\"unit\":\"ratio\",\"period\":2030,\"sources\":[\"MD:L415\"]},\"dscr_2031\":{\"value\":4.64,\"unit\":\"ratio\",\"period\":2031,\"sources\":[\"MD:L415\"]}},\"issues\":[]}",
+  "prompt_tokens": 3292,
+  "generated_tokens": 865,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 8839717888,
+  "elapsed_seconds": 91.77471058599986,
+  "finished_utc": "2026-11-16T06:47:13.809091+00:00"
+}

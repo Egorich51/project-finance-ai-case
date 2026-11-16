@@ -1,0 +1,17 @@
+{
+  "case_id": "02_terms",
+  "business": "02",
+  "variant": "terms",
+  "input_sha256": "32631096aa99cfe7bd6d3a43c295e2a6233776e55b75844259b3d4d0fcc71d51",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "started_utc": "2026-11-16T06:44:47.507249+00:00",
+  "serialized_prompt_sha256": "fe9042bba40677d86005effa6c43010cd7ec3b0df9eb72e73e8d9b37aa550270",
+  "raw_text": "{\"fields\":{\"budget_total\":{\"value\":65.9,\"unit\":\"million_rub\",\"period\":\"project\",\"sources\":[\"MD:L300\"]},\"capex_net\":{\"value\":45,\"unit\":\"million_rub\",\"period\":\"project\",\"sources\":[\"MD:L289\"]},\"capex_vat\":{\"value\":9.9,\"unit\":\"million_rub\",\"period\":\"project\",\"sources\":[\"MD:L289\"]},\"capex_gross\":{\"value\":54.9,\"unit\":\"million_rub\",\"period\":\"project\",\"sources\":[\"MD:L289\"]},\"working_capital\":{\"value\":6,\"unit\":\"million_rub\",\"period\":\"project\",\"sources\":[\"MD:L298\"]},\"liquidity_reserve\":{\"value\":5,\"unit\":\"million_rub\",\"period\":\"project\",\"sources\":[\"MD:L299\"]},\"new_loan\":{\"value\":36,\"unit\":\"million_rub\",\"period\":\"project\",\"sources\":[\"MD:L308\"]},\"equity_total\":{\"value\":29.9,\"unit\":\"million_rub\",\"period\":\"project\",\"sources\":[\"MD:L309\"]},\"owner_contribution\":{\"value\":0,\"unit\":\"million_rub\",\"period\":\"project\",\"sources\":[\"MD:L309\"]},\"company_cash_contribution\":{\"value\":29.9,\"unit\":\"million_rub\",\"period\":\"project\",\"sources\":[\"MD:L309\"]},\"annual_rate\":{\"value\":0.21,\"unit\":\"fraction\",\"period\":\"project\",\"sources\":[\"MD:L470\"]},\"tenor_months\":{\"value\":60,\"unit\":\"month\",\"period\":\"project\",\"sources\":[\"MD:L470\"]},\"grace_months\":{\"value\":12,\"unit\":\"month\",\"period\":\"project\",\"sources\":[\"MD:L471\"]},\"draw_2027_01\":{\"value\":12,\"unit\":\"million_rub\",\"period\":\"2027-01\",\"sources\":[\"MD:L479\"]},\"draw_2027_02\":{\"value\":12,\"unit\":\"million_rub\",\"period\":\"2027-02\",\"sources\":[\"MD:L479\"]},\"draw_2027_03\":{\"value\":12,\"unit\":\"million_rub\",\"period\":\"2027-03\",\"sources\":[\"MD:L479\"]}},\"issues\":[]}",
+  "prompt_tokens": 3343,
+  "generated_tokens": 494,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 8933773312,
+  "elapsed_seconds": 54.50664502099971,
+  "finished_utc": "2026-11-16T06:45:42.023996+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "case_id": "03_financials",
+  "business": "03",
+  "variant": "financials",
+  "input_sha256": "f29e8b82bf1a3fe167f6e3539e210462df1b58700e0dd1d8b8543dc4ea7d022e",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "started_utc": "2026-11-16T06:43:51.344142+00:00",
+  "serialized_prompt_sha256": "844d03bb89bb56f4f3683570fe5651313e2397d1f0eb139fda670444d6785990",
+  "raw_text": "```json\n{\n  \"revenue_2025\": 190000,\n  \"net_profit_2025\": 19950,\n  \"assets_2025\": 106980,\n  \"cash_2025\": 27680,\n  \"debt_long_2025\": 4000,\n  \"debt_short_2025\": 2000,\n  \"cfo_2025\": 23270,\n  \"ebitda_2027\": 4797,\n  \"cfads_2027\": 2980,\n  \"dscr_2027\": 1.52,\n  \"dscr_2028\": 1.45,\n  \"dscr_2029\": 1.45,\n  \"dscr_2030\": 1.90,\n  \"dscr_2031\": 2.37\n}\n```",
+  "prompt_tokens": 3295,
+  "generated_tokens": 239,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 2607860736,
+  "elapsed_seconds": 13.826746795999952,
+  "finished_utc": "2026-11-16T06:44:05.180489+00:00"
+}

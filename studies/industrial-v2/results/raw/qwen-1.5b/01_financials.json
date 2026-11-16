@@ -1,0 +1,17 @@
+{
+  "case_id": "01_financials",
+  "business": "01",
+  "variant": "financials",
+  "input_sha256": "22a41d681fce01efc7f05b718ce992e66c243b83315e08f03cc5ee490cc7eb36",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "started_utc": "2026-11-16T06:42:43.556275+00:00",
+  "serialized_prompt_sha256": "0680fa3e9b01478d1be9930da11dc1733e14e852d1c59237e56798f368b43325",
+  "raw_text": "```json\n{\n  \"fields\": {\n    \"revenue_2025\": 180000,\n    \"net_profit_2025\": 18375,\n    \"assets_2025\": 86610,\n    \"cash_2025\": 21010,\n    \"debt_long_2025\": 7000,\n    \"debt_short_2025\": 2500,\n    \"cfo_2025\": 15270,\n    \"ebitda_2027\": 2074,\n    \"ebitda_2028\": 2286,\n    \"ebitda_2029\": 2488,\n    \"ebitda_2030\": 2629,\n    \"ebitda_2031\": 2761,\n    \"cfads_2027\": 3296,\n    \"cfads_2028\": 3436,\n    \"cfads_2029\": 3528,\n    \"cfads_2030\": 3670,\n    \"dscr_2027\": 1.05,\n    \"dscr_2028\": 1.19,\n    \"dscr_2029\": 1.42,\n    \"dscr_2030\": 1.60,\n    \"dscr_2031\": 1.82\n}\n```",
+  "prompt_tokens": 3283,
+  "generated_tokens": 359,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 2598581760,
+  "elapsed_seconds": 23.601272701000198,
+  "finished_utc": "2026-11-16T06:43:07.168916+00:00"
+}

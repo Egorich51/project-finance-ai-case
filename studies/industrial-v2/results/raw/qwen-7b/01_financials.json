@@ -1,0 +1,17 @@
+{
+  "case_id": "01_financials",
+  "business": "01",
+  "variant": "financials",
+  "input_sha256": "22a41d681fce01efc7f05b718ce992e66c243b83315e08f03cc5ee490cc7eb36",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "started_utc": "2026-11-16T06:44:12.883172+00:00",
+  "serialized_prompt_sha256": "0680fa3e9b01478d1be9930da11dc1733e14e852d1c59237e56798f368b43325",
+  "raw_text": "{\"fields\":{\"revenue_2025\":{\"value\":180,\"unit\":\"million_rub\",\"period\":2025,\"sources\":[\"XLSX:ОФР!F9\"]},\"net_profit_2025\":{\"value\":18.375,\"unit\":\"million_rub\",\"period\":2025,\"sources\":[\"XLSX:ОФР!F26\"]},\"assets_2025\":{\"value\":86.61,\"unit\":\"million_rub\",\"period\":2025,\"sources\":[\"XLSX:Баланс!F30\"]},\"cash_2025\":{\"value\":21.01,\"unit\":\"million_rub\",\"period\":2025,\"sources\":[\"XLSX:Баланс!F27\"]},\"debt_long_2025\":{\"value\":7,\"unit\":\"million_rub\",\"period\":2025,\"sources\":[\"XLSX:Баланс!F41\"]},\"debt_short_2025\":{\"value\":2.5,\"unit\":\"million_rub\",\"period\":2025,\"sources\":[\"XLSX:Баланс!F47\"]},\"cfo_2025\":{\"value\":15.27,\"unit\":\"million_rub\",\"period\":2025,\"sources\":[\"XLSX:ОДДС!F22\"]}},\"issues\":[]}",
+  "prompt_tokens": 3283,
+  "generated_tokens": 309,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 8823542784,
+  "elapsed_seconds": 34.613553409999895,
+  "finished_utc": "2026-11-16T06:44:47.506717+00:00"
+}

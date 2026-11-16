@@ -1,0 +1,17 @@
+{
+  "case_id": "01_terms",
+  "business": "01",
+  "variant": "terms",
+  "input_sha256": "2d5b9b00cb5b330138cc627bbd957efdefa9c3ad80bebc75880bfdf6bcba3e0e",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "started_utc": "2026-11-16T06:43:05.228809+00:00",
+  "serialized_prompt_sha256": "3396181247c1f9c9dfb2b7bbac732cdaff6a4fbff8dffebeec98dd9941033df1",
+  "raw_text": "{\n    \"fields\": {\n        \"budget_total\": {\"value\": 107.6, \"unit\": \"million_rub\", \"period\": \"project\", \"sources\": [\"MD:L304\"]},\n        \"capex_net\": {\"value\": 80, \"unit\": \"million_rub\", \"period\": \"project\", \"sources\": [\"MD:L293\"]},\n        \"capex_vat\": {\"value\": 17.6, \"unit\": \"million_rub\", \"period\": \"project\", \"sources\": [\"MD:L293\"]},\n        \"capex_gross\": {\"value\": 97.6, \"unit\": \"million_rub\", \"period\": \"project\", \"sources\": [\"MD:L293\"]},\n        \"working_capital\": {\"value\": 10, \"unit\": \"million_rub\", \"period\": \"project\", \"sources\": [\"MD:L302\"]},\n        \"liquidity_reserve\": {\"value\": 0, \"unit\": \"million_rub\", \"period\": \"project\", \"sources\": [\"MD:L303\"]},\n        \"new_loan\": {\"value\": 65, \"unit\": \"million_rub\", \"period\": \"project\", \"sources\": [\"MD:L55\"]},\n        \"equity_total\": {\"value\": 42.6, \"unit\": \"million_rub\", \"period\": \"project\", \"sources\": [\"MD:L56\"]},\n        \"owner_contribution\": {\"value\": 35, \"unit\": \"million_rub\", \"period\": \"project\", \"sources\": [\"MD:L312\"]},\n        \"company_cash_contribution\": {\"value\": 7.6, \"unit\": \"million_rub\", \"period\": \"project\", \"sources\": [\"MD:L313\"]},\n        \"annual_rate\": {\"value\": 0.21, \"unit\": \"fraction\", \"period\": \"project\", \"sources\": [\"MD:L474\"]},\n        \"tenor_months\": {\"value\": 60, \"unit\": \"month\", \"period\": \"project\", \"sources\": [\"MD:L473\"]},\n        \"grace_months\": {\"value\": 12, \"unit\": \"month\", \"period\": \"project\", \"sources\": [\"MD:L475\"]},\n        \"draw_2027_01\": {\"value\": 30, \"unit\": \"million_rub\", \"period\": \"2027-01\", \"sources\": [\"MD:L483\"]},\n        \"draw_2027_02\": {\"value\": 25, \"unit\": \"million_rub\", \"period\": \"2027-02\", \"sources\": [\"MD:L483\"]},\n        \"draw_2027_03\": {\"value\": 10, \"unit\": \"million_rub\", \"period\": \"2027-03\", \"sources\": [\"MD:L483\"]}\n    },\n    \"issues\": []\n}",
+  "prompt_tokens": 3410,
+  "generated_tokens": 661,
+  "finish_reason": "stop",
+  "peak_gpu_memory_bytes": 9057549824,
+  "elapsed_seconds": 67.63019105099966,
+  "finished_utc": "2026-11-16T06:44:12.882534+00:00"
+}

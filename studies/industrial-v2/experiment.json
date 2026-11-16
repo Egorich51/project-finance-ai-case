@@ -1,0 +1,7 @@
+{
+  "freeze_commit": "fda1186",
+  "gpu_inputs_sha256": "47fde1d44ed101b0dbcfc0b605ea8e39fb6fd561d13983ae5f59efbe9ad252ea",
+  "reference_sha256": "2f7365c54a89f300fc547a32380016aded911b2e4ccf5c6aa0152a4dfda1abc4",
+  "runner_sha256": "94fbb819d63d3f216be9c740b4516e6081eeaf149913ebf6c704f67d01c11c4e",
+  "source_manifest_sha256": "d36330614ecf32201a80b943e97f0ef5df41286a56098a8e1a5c1dabc3ee300e"
+}

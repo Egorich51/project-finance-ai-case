@@ -1,0 +1,3411 @@
+{
+  "scope": "3 synthetic projects, 6 complete-source tasks per model; no missing/conflict variants",
+  "models": {
+    "Qwen/Qwen2.5-1.5B-Instruct": {
+      "total": 114,
+      "values_correct": 0,
+      "grounded_correct": 0,
+      "false_issues": 0,
+      "parse_failures": 6
+    },
+    "Qwen/Qwen2.5-7B-Instruct": {
+      "total": 114,
+      "values_correct": 82,
+      "grounded_correct": 76,
+      "false_issues": 0,
+      "parse_failures": 0
+    }
+  },
+  "records": [
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "case_id": "01_financials",
+      "parse_error": "Expecting value: line 1 column 1 (char 0)",
+      "elapsed_seconds": 23.601272701000198,
+      "generated_tokens": 359,
+      "evaluation": {
+        "values_correct": 0,
+        "grounded_correct": 0,
+        "total": 22,
+        "false_issues": 0,
+        "issues": [],
+        "fields": [
+          {
+            "field": "revenue_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 180.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:ОФР!F9"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "net_profit_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 18.375,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:ОФР!F26"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "assets_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 86.61,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:Баланс!F30"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cash_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 21.01,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:Баланс!F27"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "debt_long_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 7.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:Баланс!F41"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "debt_short_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 2.5,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:Баланс!F47"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfo_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 15.27,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:ОДДС!F22"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 20.1,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 40.52,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 44.33,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 43.74,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 43.02,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 13.46,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 33.66,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 35.28,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 34.36,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 32.96,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.05,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.19,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.42,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.6,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.82,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          }
+        ],
+        "unexpected_fields": []
+      },
+      "record": "results/raw/qwen-1.5b/01_financials.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "case_id": "01_terms",
+      "parse_error": "Expecting value: line 1 column 1 (char 0)",
+      "elapsed_seconds": 16.510991952000268,
+      "generated_tokens": 217,
+      "evaluation": {
+        "values_correct": 0,
+        "grounded_correct": 0,
+        "total": 16,
+        "false_issues": 0,
+        "issues": [],
+        "fields": [
+          {
+            "field": "budget_total",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 107.6,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L54",
+              "MD:L304",
+              "MD:L315"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "capex_net",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 80.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L293"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "capex_vat",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 17.6,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L293"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "capex_gross",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 97.6,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L293"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "working_capital",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 10.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L302"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "liquidity_reserve",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 0.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L303"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "new_loan",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 65.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L55",
+              "MD:L312",
+              "MD:L471"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "equity_total",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 42.6,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L56"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "owner_contribution",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 35.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L313"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "company_cash_contribution",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 7.6,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L314"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "annual_rate",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 0.21,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L474",
+              "MD:L375",
+              "MD:L57"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "tenor_months",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 60,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L473",
+              "MD:L57"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "grace_months",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 12,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L475"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "draw_2027_01",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 30.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L483"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "draw_2027_02",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 25.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L483"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "draw_2027_03",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 10.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L483"
+            ],
+            "actual_sources": []
+          }
+        ],
+        "unexpected_fields": []
+      },
+      "record": "results/raw/qwen-1.5b/01_terms.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "case_id": "02_financials",
+      "parse_error": "Expecting value: line 1 column 1 (char 0)",
+      "elapsed_seconds": 20.09467606299995,
+      "generated_tokens": 363,
+      "evaluation": {
+        "values_correct": 0,
+        "grounded_correct": 0,
+        "total": 22,
+        "false_issues": 0,
+        "issues": [],
+        "fields": [
+          {
+            "field": "revenue_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 225.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:ОФР!F9"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "net_profit_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 29.25,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:ОФР!F26"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "assets_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 145.61,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:Баланс!F30"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cash_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 47.51,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:Баланс!F27"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "debt_long_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 0.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:Баланс!F41"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "debt_short_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 0.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:Баланс!F47"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfo_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 32.9,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:ОДДС!F22"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 38.32,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L398"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 55.83,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L398"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 62.42,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L398"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 63.25,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L398"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 64.01,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L398"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 24.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L412"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 42.96,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L412"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 45.51,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L412"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 46.45,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L412"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 46.52,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L412"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 3.46,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L415"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 2.74,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L415"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 3.3,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L415"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 3.9,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L415"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 4.64,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L415"
+            ],
+            "actual_sources": []
+          }
+        ],
+        "unexpected_fields": []
+      },
+      "record": "results/raw/qwen-1.5b/02_financials.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "case_id": "02_terms",
+      "parse_error": "Expecting value: line 1 column 1 (char 0)",
+      "elapsed_seconds": 10.79008555199971,
+      "generated_tokens": 182,
+      "evaluation": {
+        "values_correct": 0,
+        "grounded_correct": 0,
+        "total": 16,
+        "false_issues": 0,
+        "issues": [],
+        "fields": [
+          {
+            "field": "budget_total",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 65.9,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L54",
+              "MD:L300",
+              "MD:L311"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "capex_net",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 45.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L289"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "capex_vat",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 9.9,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L289"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "capex_gross",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 54.9,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L289"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "working_capital",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 6.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L298"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "liquidity_reserve",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 5.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L299"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "new_loan",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 36.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L55",
+              "MD:L308",
+              "MD:L467"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "equity_total",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 29.9,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L56"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "owner_contribution",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 0.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L309"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "company_cash_contribution",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 29.9,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L310"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "annual_rate",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 0.21,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L470",
+              "MD:L371",
+              "MD:L57"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "tenor_months",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 60,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L469",
+              "MD:L57"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "grace_months",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 12,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L471"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "draw_2027_01",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 12.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L479"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "draw_2027_02",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 12.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L479"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "draw_2027_03",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 12.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L479"
+            ],
+            "actual_sources": []
+          }
+        ],
+        "unexpected_fields": []
+      },
+      "record": "results/raw/qwen-1.5b/02_terms.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "case_id": "03_financials",
+      "parse_error": "Expecting value: line 1 column 1 (char 0)",
+      "elapsed_seconds": 13.826746795999952,
+      "generated_tokens": 239,
+      "evaluation": {
+        "values_correct": 0,
+        "grounded_correct": 0,
+        "total": 22,
+        "false_issues": 0,
+        "issues": [],
+        "fields": [
+          {
+            "field": "revenue_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 190.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:ОФР!F9"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "net_profit_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 19.95,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:ОФР!F26"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "assets_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 106.98,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:Баланс!F30"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cash_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 27.68,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:Баланс!F27"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "debt_long_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 4.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:Баланс!F41"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "debt_short_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 2.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:Баланс!F47"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfo_2025",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 23.27,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "XLSX:ОДДС!F22"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 4.17,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 38.95,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 47.97,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 53.66,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 55.59,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": -10.15,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 29.8,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 35.63,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 39.98,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 41.64,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": -1.09,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.52,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.45,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.9,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 2.37,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          }
+        ],
+        "unexpected_fields": []
+      },
+      "record": "results/raw/qwen-1.5b/03_financials.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "case_id": "03_terms",
+      "parse_error": "Expecting value: line 1 column 1 (char 0)",
+      "elapsed_seconds": 13.258279165000204,
+      "generated_tokens": 227,
+      "evaluation": {
+        "values_correct": 0,
+        "grounded_correct": 0,
+        "total": 16,
+        "false_issues": 0,
+        "issues": [],
+        "fields": [
+          {
+            "field": "budget_total",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 107.4,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L54",
+              "MD:L304",
+              "MD:L315"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "capex_net",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 70.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L293"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "capex_vat",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 15.4,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L293"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "capex_gross",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 85.4,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L293"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "working_capital",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 12.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L302"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "liquidity_reserve",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 10.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L303"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "new_loan",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 55.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L55",
+              "MD:L312",
+              "MD:L471"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "equity_total",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 52.4,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L56"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "owner_contribution",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 35.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L313"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "company_cash_contribution",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 17.4,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L314"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "annual_rate",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 0.22,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L474",
+              "MD:L375",
+              "MD:L57"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "tenor_months",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 60,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L473",
+              "MD:L57"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "grace_months",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 18,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L475"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "draw_2027_01",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 20.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L483"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "draw_2027_04",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 20.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L483"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "draw_2027_07",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 15.0,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L483"
+            ],
+            "actual_sources": []
+          }
+        ],
+        "unexpected_fields": []
+      },
+      "record": "results/raw/qwen-1.5b/03_terms.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "case_id": "01_financials",
+      "parse_error": null,
+      "elapsed_seconds": 34.613553409999895,
+      "generated_tokens": 309,
+      "evaluation": {
+        "values_correct": 7,
+        "grounded_correct": 7,
+        "total": 22,
+        "false_issues": 0,
+        "issues": [],
+        "fields": [
+          {
+            "field": "revenue_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 180.0,
+            "actual": 180,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:ОФР!F9"
+            ],
+            "actual_sources": [
+              "XLSX:ОФР!F9"
+            ]
+          },
+          {
+            "field": "net_profit_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 18.375,
+            "actual": 18.375,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:ОФР!F26"
+            ],
+            "actual_sources": [
+              "XLSX:ОФР!F26"
+            ]
+          },
+          {
+            "field": "assets_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 86.61,
+            "actual": 86.61,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:Баланс!F30"
+            ],
+            "actual_sources": [
+              "XLSX:Баланс!F30"
+            ]
+          },
+          {
+            "field": "cash_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 21.01,
+            "actual": 21.01,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:Баланс!F27"
+            ],
+            "actual_sources": [
+              "XLSX:Баланс!F27"
+            ]
+          },
+          {
+            "field": "debt_long_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 7.0,
+            "actual": 7,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:Баланс!F41"
+            ],
+            "actual_sources": [
+              "XLSX:Баланс!F41"
+            ]
+          },
+          {
+            "field": "debt_short_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 2.5,
+            "actual": 2.5,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:Баланс!F47"
+            ],
+            "actual_sources": [
+              "XLSX:Баланс!F47"
+            ]
+          },
+          {
+            "field": "cfo_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 15.27,
+            "actual": 15.27,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:ОДДС!F22"
+            ],
+            "actual_sources": [
+              "XLSX:ОДДС!F22"
+            ]
+          },
+          {
+            "field": "ebitda_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 20.1,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 40.52,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 44.33,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 43.74,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 43.02,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 13.46,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 33.66,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 35.28,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 34.36,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 32.96,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.05,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.19,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.42,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.6,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.82,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          }
+        ],
+        "unexpected_fields": []
+      },
+      "record": "results/raw/qwen-7b/01_financials.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "case_id": "01_terms",
+      "parse_error": null,
+      "elapsed_seconds": 67.63019105099966,
+      "generated_tokens": 661,
+      "evaluation": {
+        "values_correct": 16,
+        "grounded_correct": 14,
+        "total": 16,
+        "false_issues": 0,
+        "issues": [],
+        "fields": [
+          {
+            "field": "budget_total",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 107.6,
+            "actual": 107.6,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L54",
+              "MD:L304",
+              "MD:L315"
+            ],
+            "actual_sources": [
+              "MD:L304"
+            ]
+          },
+          {
+            "field": "capex_net",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 80.0,
+            "actual": 80,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L293"
+            ],
+            "actual_sources": [
+              "MD:L293"
+            ]
+          },
+          {
+            "field": "capex_vat",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 17.6,
+            "actual": 17.6,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L293"
+            ],
+            "actual_sources": [
+              "MD:L293"
+            ]
+          },
+          {
+            "field": "capex_gross",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 97.6,
+            "actual": 97.6,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L293"
+            ],
+            "actual_sources": [
+              "MD:L293"
+            ]
+          },
+          {
+            "field": "working_capital",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 10.0,
+            "actual": 10,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L302"
+            ],
+            "actual_sources": [
+              "MD:L302"
+            ]
+          },
+          {
+            "field": "liquidity_reserve",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 0.0,
+            "actual": 0,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L303"
+            ],
+            "actual_sources": [
+              "MD:L303"
+            ]
+          },
+          {
+            "field": "new_loan",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 65.0,
+            "actual": 65,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L55",
+              "MD:L312",
+              "MD:L471"
+            ],
+            "actual_sources": [
+              "MD:L55"
+            ]
+          },
+          {
+            "field": "equity_total",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 42.6,
+            "actual": 42.6,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L56"
+            ],
+            "actual_sources": [
+              "MD:L56"
+            ]
+          },
+          {
+            "field": "owner_contribution",
+            "value_correct": true,
+            "source_hit": false,
+            "expected": 35.0,
+            "actual": 35,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L313"
+            ],
+            "actual_sources": [
+              "MD:L312"
+            ]
+          },
+          {
+            "field": "company_cash_contribution",
+            "value_correct": true,
+            "source_hit": false,
+            "expected": 7.6,
+            "actual": 7.6,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L314"
+            ],
+            "actual_sources": [
+              "MD:L313"
+            ]
+          },
+          {
+            "field": "annual_rate",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 0.21,
+            "actual": 0.21,
+            "actual_unit": "fraction",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L474",
+              "MD:L375",
+              "MD:L57"
+            ],
+            "actual_sources": [
+              "MD:L474"
+            ]
+          },
+          {
+            "field": "tenor_months",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 60,
+            "actual": 60,
+            "actual_unit": "month",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L473",
+              "MD:L57"
+            ],
+            "actual_sources": [
+              "MD:L473"
+            ]
+          },
+          {
+            "field": "grace_months",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 12,
+            "actual": 12,
+            "actual_unit": "month",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L475"
+            ],
+            "actual_sources": [
+              "MD:L475"
+            ]
+          },
+          {
+            "field": "draw_2027_01",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 30.0,
+            "actual": 30,
+            "actual_unit": "million_rub",
+            "actual_period": "2027-01",
+            "allowed_sources": [
+              "MD:L483"
+            ],
+            "actual_sources": [
+              "MD:L483"
+            ]
+          },
+          {
+            "field": "draw_2027_02",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 25.0,
+            "actual": 25,
+            "actual_unit": "million_rub",
+            "actual_period": "2027-02",
+            "allowed_sources": [
+              "MD:L483"
+            ],
+            "actual_sources": [
+              "MD:L483"
+            ]
+          },
+          {
+            "field": "draw_2027_03",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 10.0,
+            "actual": 10,
+            "actual_unit": "million_rub",
+            "actual_period": "2027-03",
+            "allowed_sources": [
+              "MD:L483"
+            ],
+            "actual_sources": [
+              "MD:L483"
+            ]
+          }
+        ],
+        "unexpected_fields": []
+      },
+      "record": "results/raw/qwen-7b/01_terms.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "case_id": "02_financials",
+      "parse_error": null,
+      "elapsed_seconds": 91.77471058599986,
+      "generated_tokens": 865,
+      "evaluation": {
+        "values_correct": 20,
+        "grounded_correct": 20,
+        "total": 22,
+        "false_issues": 0,
+        "issues": [],
+        "fields": [
+          {
+            "field": "revenue_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 225.0,
+            "actual": 225,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:ОФР!F9"
+            ],
+            "actual_sources": [
+              "XLSX:ОФР!F9"
+            ]
+          },
+          {
+            "field": "net_profit_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 29.25,
+            "actual": 29.25,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:ОФР!F26"
+            ],
+            "actual_sources": [
+              "XLSX:ОФР!F26"
+            ]
+          },
+          {
+            "field": "assets_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 145.61,
+            "actual": 145610,
+            "actual_unit": "thousand_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:Баланс!F30"
+            ],
+            "actual_sources": [
+              "XLSX:Баланс!F30"
+            ]
+          },
+          {
+            "field": "cash_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 47.51,
+            "actual": 47510,
+            "actual_unit": "thousand_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:Баланс!F27"
+            ],
+            "actual_sources": [
+              "XLSX:Баланс!F27"
+            ]
+          },
+          {
+            "field": "debt_long_2025",
+            "value_correct": false,
+            "source_hit": true,
+            "expected": 0.0,
+            "actual": null,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:Баланс!F41"
+            ],
+            "actual_sources": [
+              "XLSX:Баланс!F41"
+            ]
+          },
+          {
+            "field": "debt_short_2025",
+            "value_correct": false,
+            "source_hit": true,
+            "expected": 0.0,
+            "actual": null,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:Баланс!F47"
+            ],
+            "actual_sources": [
+              "XLSX:Баланс!F47"
+            ]
+          },
+          {
+            "field": "cfo_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 32.9,
+            "actual": 32900,
+            "actual_unit": "thousand_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:ОДДС!F22"
+            ],
+            "actual_sources": [
+              "XLSX:ОДДС!F22"
+            ]
+          },
+          {
+            "field": "ebitda_2027",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 38.32,
+            "actual": 38.32,
+            "actual_unit": "million_rub",
+            "actual_period": 2027,
+            "allowed_sources": [
+              "MD:L398"
+            ],
+            "actual_sources": [
+              "MD:L398"
+            ]
+          },
+          {
+            "field": "ebitda_2028",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 55.83,
+            "actual": 55.83,
+            "actual_unit": "million_rub",
+            "actual_period": 2028,
+            "allowed_sources": [
+              "MD:L398"
+            ],
+            "actual_sources": [
+              "MD:L398"
+            ]
+          },
+          {
+            "field": "ebitda_2029",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 62.42,
+            "actual": 62.42,
+            "actual_unit": "million_rub",
+            "actual_period": 2029,
+            "allowed_sources": [
+              "MD:L398"
+            ],
+            "actual_sources": [
+              "MD:L398"
+            ]
+          },
+          {
+            "field": "ebitda_2030",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 63.25,
+            "actual": 63.25,
+            "actual_unit": "million_rub",
+            "actual_period": 2030,
+            "allowed_sources": [
+              "MD:L398"
+            ],
+            "actual_sources": [
+              "MD:L398"
+            ]
+          },
+          {
+            "field": "ebitda_2031",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 64.01,
+            "actual": 64.01,
+            "actual_unit": "million_rub",
+            "actual_period": 2031,
+            "allowed_sources": [
+              "MD:L398"
+            ],
+            "actual_sources": [
+              "MD:L398"
+            ]
+          },
+          {
+            "field": "cfads_2027",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 24.0,
+            "actual": 24,
+            "actual_unit": "million_rub",
+            "actual_period": 2027,
+            "allowed_sources": [
+              "MD:L412"
+            ],
+            "actual_sources": [
+              "MD:L412"
+            ]
+          },
+          {
+            "field": "cfads_2028",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 42.96,
+            "actual": 42.96,
+            "actual_unit": "million_rub",
+            "actual_period": 2028,
+            "allowed_sources": [
+              "MD:L412"
+            ],
+            "actual_sources": [
+              "MD:L412"
+            ]
+          },
+          {
+            "field": "cfads_2029",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 45.51,
+            "actual": 45.51,
+            "actual_unit": "million_rub",
+            "actual_period": 2029,
+            "allowed_sources": [
+              "MD:L412"
+            ],
+            "actual_sources": [
+              "MD:L412"
+            ]
+          },
+          {
+            "field": "cfads_2030",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 46.45,
+            "actual": 46.45,
+            "actual_unit": "million_rub",
+            "actual_period": 2030,
+            "allowed_sources": [
+              "MD:L412"
+            ],
+            "actual_sources": [
+              "MD:L412"
+            ]
+          },
+          {
+            "field": "cfads_2031",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 46.52,
+            "actual": 46.52,
+            "actual_unit": "million_rub",
+            "actual_period": 2031,
+            "allowed_sources": [
+              "MD:L412"
+            ],
+            "actual_sources": [
+              "MD:L412"
+            ]
+          },
+          {
+            "field": "dscr_2027",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 3.46,
+            "actual": 3.46,
+            "actual_unit": "ratio",
+            "actual_period": 2027,
+            "allowed_sources": [
+              "MD:L415"
+            ],
+            "actual_sources": [
+              "MD:L415"
+            ]
+          },
+          {
+            "field": "dscr_2028",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 2.74,
+            "actual": 2.74,
+            "actual_unit": "ratio",
+            "actual_period": 2028,
+            "allowed_sources": [
+              "MD:L415"
+            ],
+            "actual_sources": [
+              "MD:L415"
+            ]
+          },
+          {
+            "field": "dscr_2029",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 3.3,
+            "actual": 3.3,
+            "actual_unit": "ratio",
+            "actual_period": 2029,
+            "allowed_sources": [
+              "MD:L415"
+            ],
+            "actual_sources": [
+              "MD:L415"
+            ]
+          },
+          {
+            "field": "dscr_2030",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 3.9,
+            "actual": 3.9,
+            "actual_unit": "ratio",
+            "actual_period": 2030,
+            "allowed_sources": [
+              "MD:L415"
+            ],
+            "actual_sources": [
+              "MD:L415"
+            ]
+          },
+          {
+            "field": "dscr_2031",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 4.64,
+            "actual": 4.64,
+            "actual_unit": "ratio",
+            "actual_period": 2031,
+            "allowed_sources": [
+              "MD:L415"
+            ],
+            "actual_sources": [
+              "MD:L415"
+            ]
+          }
+        ],
+        "unexpected_fields": []
+      },
+      "record": "results/raw/qwen-7b/02_financials.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "case_id": "02_terms",
+      "parse_error": null,
+      "elapsed_seconds": 54.50664502099971,
+      "generated_tokens": 494,
+      "evaluation": {
+        "values_correct": 16,
+        "grounded_correct": 13,
+        "total": 16,
+        "false_issues": 0,
+        "issues": [],
+        "fields": [
+          {
+            "field": "budget_total",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 65.9,
+            "actual": 65.9,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L54",
+              "MD:L300",
+              "MD:L311"
+            ],
+            "actual_sources": [
+              "MD:L300"
+            ]
+          },
+          {
+            "field": "capex_net",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 45.0,
+            "actual": 45,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L289"
+            ],
+            "actual_sources": [
+              "MD:L289"
+            ]
+          },
+          {
+            "field": "capex_vat",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 9.9,
+            "actual": 9.9,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L289"
+            ],
+            "actual_sources": [
+              "MD:L289"
+            ]
+          },
+          {
+            "field": "capex_gross",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 54.9,
+            "actual": 54.9,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L289"
+            ],
+            "actual_sources": [
+              "MD:L289"
+            ]
+          },
+          {
+            "field": "working_capital",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 6.0,
+            "actual": 6,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L298"
+            ],
+            "actual_sources": [
+              "MD:L298"
+            ]
+          },
+          {
+            "field": "liquidity_reserve",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 5.0,
+            "actual": 5,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L299"
+            ],
+            "actual_sources": [
+              "MD:L299"
+            ]
+          },
+          {
+            "field": "new_loan",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 36.0,
+            "actual": 36,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L55",
+              "MD:L308",
+              "MD:L467"
+            ],
+            "actual_sources": [
+              "MD:L308"
+            ]
+          },
+          {
+            "field": "equity_total",
+            "value_correct": true,
+            "source_hit": false,
+            "expected": 29.9,
+            "actual": 29.9,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L56"
+            ],
+            "actual_sources": [
+              "MD:L309"
+            ]
+          },
+          {
+            "field": "owner_contribution",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 0.0,
+            "actual": 0,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L309"
+            ],
+            "actual_sources": [
+              "MD:L309"
+            ]
+          },
+          {
+            "field": "company_cash_contribution",
+            "value_correct": true,
+            "source_hit": false,
+            "expected": 29.9,
+            "actual": 29.9,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L310"
+            ],
+            "actual_sources": [
+              "MD:L309"
+            ]
+          },
+          {
+            "field": "annual_rate",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 0.21,
+            "actual": 0.21,
+            "actual_unit": "fraction",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L470",
+              "MD:L371",
+              "MD:L57"
+            ],
+            "actual_sources": [
+              "MD:L470"
+            ]
+          },
+          {
+            "field": "tenor_months",
+            "value_correct": true,
+            "source_hit": false,
+            "expected": 60,
+            "actual": 60,
+            "actual_unit": "month",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L469",
+              "MD:L57"
+            ],
+            "actual_sources": [
+              "MD:L470"
+            ]
+          },
+          {
+            "field": "grace_months",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 12,
+            "actual": 12,
+            "actual_unit": "month",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L471"
+            ],
+            "actual_sources": [
+              "MD:L471"
+            ]
+          },
+          {
+            "field": "draw_2027_01",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 12.0,
+            "actual": 12,
+            "actual_unit": "million_rub",
+            "actual_period": "2027-01",
+            "allowed_sources": [
+              "MD:L479"
+            ],
+            "actual_sources": [
+              "MD:L479"
+            ]
+          },
+          {
+            "field": "draw_2027_02",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 12.0,
+            "actual": 12,
+            "actual_unit": "million_rub",
+            "actual_period": "2027-02",
+            "allowed_sources": [
+              "MD:L479"
+            ],
+            "actual_sources": [
+              "MD:L479"
+            ]
+          },
+          {
+            "field": "draw_2027_03",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 12.0,
+            "actual": 12,
+            "actual_unit": "million_rub",
+            "actual_period": "2027-03",
+            "allowed_sources": [
+              "MD:L479"
+            ],
+            "actual_sources": [
+              "MD:L479"
+            ]
+          }
+        ],
+        "unexpected_fields": []
+      },
+      "record": "results/raw/qwen-7b/02_terms.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "case_id": "03_financials",
+      "parse_error": null,
+      "elapsed_seconds": 36.21940329600011,
+      "generated_tokens": 318,
+      "evaluation": {
+        "values_correct": 7,
+        "grounded_correct": 7,
+        "total": 22,
+        "false_issues": 0,
+        "issues": [],
+        "fields": [
+          {
+            "field": "revenue_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 190.0,
+            "actual": 190,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:ОФР!F9"
+            ],
+            "actual_sources": [
+              "XLSX:ОФР!F9"
+            ]
+          },
+          {
+            "field": "net_profit_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 19.95,
+            "actual": 19.95,
+            "actual_unit": "million_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:ОФР!F26"
+            ],
+            "actual_sources": [
+              "XLSX:ОФР!F26"
+            ]
+          },
+          {
+            "field": "assets_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 106.98,
+            "actual": 106980,
+            "actual_unit": "thousand_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:Баланс!F30"
+            ],
+            "actual_sources": [
+              "XLSX:Баланс!F30"
+            ]
+          },
+          {
+            "field": "cash_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 27.68,
+            "actual": 27680,
+            "actual_unit": "thousand_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:Баланс!F27"
+            ],
+            "actual_sources": [
+              "XLSX:Баланс!F27"
+            ]
+          },
+          {
+            "field": "debt_long_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 4.0,
+            "actual": 4000,
+            "actual_unit": "thousand_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:Баланс!F41"
+            ],
+            "actual_sources": [
+              "XLSX:Баланс!F41"
+            ]
+          },
+          {
+            "field": "debt_short_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 2.0,
+            "actual": 2000,
+            "actual_unit": "thousand_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:Баланс!F47"
+            ],
+            "actual_sources": [
+              "XLSX:Баланс!F47"
+            ]
+          },
+          {
+            "field": "cfo_2025",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 23.27,
+            "actual": 23270,
+            "actual_unit": "thousand_rub",
+            "actual_period": 2025,
+            "allowed_sources": [
+              "XLSX:ОДДС!F22"
+            ],
+            "actual_sources": [
+              "XLSX:ОДДС!F22"
+            ]
+          },
+          {
+            "field": "ebitda_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 4.17,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 38.95,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 47.97,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 53.66,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "ebitda_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 55.59,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L402"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": -10.15,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 29.8,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 35.63,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 39.98,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "cfads_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 41.64,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L416"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2027",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": -1.09,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2028",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.52,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2029",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.45,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2030",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 1.9,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          },
+          {
+            "field": "dscr_2031",
+            "value_correct": false,
+            "source_hit": false,
+            "expected": 2.37,
+            "actual": null,
+            "actual_unit": null,
+            "actual_period": null,
+            "allowed_sources": [
+              "MD:L419"
+            ],
+            "actual_sources": []
+          }
+        ],
+        "unexpected_fields": []
+      },
+      "record": "results/raw/qwen-7b/03_financials.json"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "case_id": "03_terms",
+      "parse_error": null,
+      "elapsed_seconds": 72.98728658099981,
+      "generated_tokens": 663,
+      "evaluation": {
+        "values_correct": 16,
+        "grounded_correct": 15,
+        "total": 16,
+        "false_issues": 0,
+        "issues": [],
+        "fields": [
+          {
+            "field": "budget_total",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 107.4,
+            "actual": 107.4,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L54",
+              "MD:L304",
+              "MD:L315"
+            ],
+            "actual_sources": [
+              "MD:L304"
+            ]
+          },
+          {
+            "field": "capex_net",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 70.0,
+            "actual": 70,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L293"
+            ],
+            "actual_sources": [
+              "MD:L293"
+            ]
+          },
+          {
+            "field": "capex_vat",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 15.4,
+            "actual": 15.4,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L293"
+            ],
+            "actual_sources": [
+              "MD:L293"
+            ]
+          },
+          {
+            "field": "capex_gross",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 85.4,
+            "actual": 85.4,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L293"
+            ],
+            "actual_sources": [
+              "MD:L293"
+            ]
+          },
+          {
+            "field": "working_capital",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 12.0,
+            "actual": 12,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L302"
+            ],
+            "actual_sources": [
+              "MD:L302"
+            ]
+          },
+          {
+            "field": "liquidity_reserve",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 10.0,
+            "actual": 10,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L303"
+            ],
+            "actual_sources": [
+              "MD:L303"
+            ]
+          },
+          {
+            "field": "new_loan",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 55.0,
+            "actual": 55,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L55",
+              "MD:L312",
+              "MD:L471"
+            ],
+            "actual_sources": [
+              "MD:L55"
+            ]
+          },
+          {
+            "field": "equity_total",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 52.4,
+            "actual": 52.4,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L56"
+            ],
+            "actual_sources": [
+              "MD:L56"
+            ]
+          },
+          {
+            "field": "owner_contribution",
+            "value_correct": true,
+            "source_hit": false,
+            "expected": 35.0,
+            "actual": 35,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L313"
+            ],
+            "actual_sources": [
+              "MD:L312"
+            ]
+          },
+          {
+            "field": "company_cash_contribution",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 17.4,
+            "actual": 17.4,
+            "actual_unit": "million_rub",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L314"
+            ],
+            "actual_sources": [
+              "MD:L314"
+            ]
+          },
+          {
+            "field": "annual_rate",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 0.22,
+            "actual": 0.22,
+            "actual_unit": "fraction",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L474",
+              "MD:L375",
+              "MD:L57"
+            ],
+            "actual_sources": [
+              "MD:L474"
+            ]
+          },
+          {
+            "field": "tenor_months",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 60,
+            "actual": 60,
+            "actual_unit": "month",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L473",
+              "MD:L57"
+            ],
+            "actual_sources": [
+              "MD:L473"
+            ]
+          },
+          {
+            "field": "grace_months",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 18,
+            "actual": 18,
+            "actual_unit": "month",
+            "actual_period": "project",
+            "allowed_sources": [
+              "MD:L475"
+            ],
+            "actual_sources": [
+              "MD:L475"
+            ]
+          },
+          {
+            "field": "draw_2027_01",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 20.0,
+            "actual": 20,
+            "actual_unit": "million_rub",
+            "actual_period": "2027-01",
+            "allowed_sources": [
+              "MD:L483"
+            ],
+            "actual_sources": [
+              "MD:L483"
+            ]
+          },
+          {
+            "field": "draw_2027_04",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 20.0,
+            "actual": 20,
+            "actual_unit": "million_rub",
+            "actual_period": "2027-04",
+            "allowed_sources": [
+              "MD:L483"
+            ],
+            "actual_sources": [
+              "MD:L483"
+            ]
+          },
+          {
+            "field": "draw_2027_07",
+            "value_correct": true,
+            "source_hit": true,
+            "expected": 15.0,
+            "actual": 15,
+            "actual_unit": "million_rub",
+            "actual_period": "2027-07",
+            "allowed_sources": [
+              "MD:L483"
+            ],
+            "actual_sources": [
+              "MD:L483"
+            ]
+          }
+        ],
+        "unexpected_fields": []
+      },
+      "record": "results/raw/qwen-7b/03_terms.json"
+    }
+  ]
+}

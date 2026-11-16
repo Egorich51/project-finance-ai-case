@@ -4,6 +4,8 @@ Money is converted from source thousands of RUB to millions. Operating drivers,
 tax payments and unlevered FCF remain explicitly supplied source assumptions.
 """
 import math
+import hashlib
+import json
 
 
 def npv(rate: float, flows: list[float]) -> float:
@@ -30,6 +32,8 @@ def irr(flows: list[float]) -> float:
 
 def audit_project(data: dict) -> dict:
     p, original = data['project'], data['business_plan_v2']
+    if not math.isfinite(p['annual_rate']) or p['annual_rate'] < 0:
+        raise ValueError('Invalid annual rate')
     tenor, grace = p['tenor_months'], p['grace_months']
     loan, equity, budget = (p[key] / 1000 for key in ('loan', 'equity_total', 'total_funding'))
     if not isinstance(tenor, int) or not isinstance(grace, int) or not 0 <= grace < tenor:
@@ -47,6 +51,8 @@ def audit_project(data: dict) -> dict:
             raise ValueError('Monthly periods out of order')
         draw = p['draw_months'][index] / 1000 if index < len(p['draw_months']) else 0.0
         row = {key: source[key] / 1000 for key in ('ebitda', 'tax', 'change_nwc', 'maintenance', 'equity', 'capex', 'vat_refund')}
+        if not all(math.isfinite(v) for v in row.values()):
+            raise ValueError('Non-finite operating input')
         row.update(year=source['year'], month=source['month'], draw=draw, debt_opening=debt)
         interest = (debt + draw) * p['annual_rate'] / 12
         principal = loan / (tenor - grace) if index >= grace else 0.0
@@ -84,6 +90,7 @@ def audit_project(data: dict) -> dict:
     minimum = min(r['dscr'] for r in repay)
     stressed_minimum = min(r['stress_dscr'] for r in repay)
     return {
+        'source_sha256': hashlib.sha256(json.dumps(data, sort_keys=True, ensure_ascii=False, allow_nan=False).encode()).hexdigest(),
         'project_id': data['id'], 'project_name': data['name'], 'company': data['company'],
         'unit': 'million_rub', 'loan': loan, 'equity': equity, 'budget': budget,
         'rate': p['annual_rate'], 'tenor_months': tenor, 'grace_months': grace,
